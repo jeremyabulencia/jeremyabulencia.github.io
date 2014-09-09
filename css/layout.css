@@ -1,71 +1,70 @@
 body{
-	background-image: url('../images/bg1.jpg');
-}
-.container{
-	margin:auto;
-	background-color:#fff;
-	padding:0px !important;
-}
-
-.Left{
-	position:fixed;
-	height:500px;
-	border:1px solid black !important;
-	background-image: url('../images/profilePic.jpg');	
-}
-.LeftMask{
-	/*border:1px solid white;*/
-	background-color: rgba(0,0,0,0.899);
-	height:500px;
-	padding:30px 20px;
-}
-
-.links li{
-	list-style: none;
-	float:left;
-	/*border:1px solid white;*/
-	margin:10px;
-	padding:15px 25px;
-	/*border-radius:50%;*/
-}
-
-
-
-
-
-
-.Right{
-	/*border:1px solid red !important;*/
-	background-color:#FFF;
-	padding:30px 15px;
-	float:right;
+	background-image: url('../images/blackbox.jpg');
+	background-attachment: fixed;
 }
 td{
-	padding:5px 20px !important;
+	padding:5px 20px;
+}
+ul{
+	list-style: none;
+}
+.LeftContent{
+	position:fixed;
+}
+.LeftMask{
+	background-color:rgba(0,0,0,0.899);
+}
+@media (max-width: 800px){
+	.RightContent{
+		width:100%;
+	}
+	.myName .title{
+		font-size: 75%;
+	}
+	.myName .myDegree{
+		font-size: 65%;
+	}
 }
 
-.myName,.myCarreer{
+.myName{
+	font-size: 16pt;
+	margin:0px;
+	color:#FFFFFF;
+	opacity: 0.8;
+}
+.myDegree{
+	font-size: 12pt;
+}
+
+
+.title{
+	font-size: 14pt;
 	font-family: 'Centaur';
 }
-.myName{
-	font-size: 16pt !important;
-	font-weight: 800;
+
+.centaurStyle{
+	font-family: 'Centaur';
 }
-.myCarreer{
-	font-size: 12pt !important;
-	font-weight: bold;
+.contained{
+	min-height: 50px;
+	background-color: #FFFFFF;
+	text-align: center;
+}
+.uncontained{
+	height: 100px;
+	background-color: rgba(0,0,0,0.899);
 }
 
-.catTitle{
-	font-weight: bold;
-	font-family: "Centaur";
-	margin-bottom: -15px !important;
-	margin-top:20px !important;
-	font-size: 13pt !important
+.mobileFooter{
+	width:100%;
+	background-color: rgba(0,0,0,0.899);
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	z-index: 9999;
+	max-height: 75px;
 }
-.catContent{
-	margin-left:30px;
-}
-hr{
-	border: 1px solid #4671D5 !important;
+
+.mobileFooter img{
+	border-radius: 50%;
 }
