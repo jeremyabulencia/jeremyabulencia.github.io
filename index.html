@@ -27,12 +27,25 @@
             <div class="mainBody col-md-12">
                 <div class="col-md-4 pull-left hidden-xs LeftContent">
                     <div class="LeftMask">
-                        <div class="col-md-12">
-                            <center><img src="images/profilePic.jpg" width="100" height="100"></center>
+                        <div class="row-fluid">
+                            <br/>
+                            <div class="col-md-12">
+                                <center><img src="images/profilePic.jpg" width="150" height="150"></center>
+                            </div>
+                            <br/>
+                            <br/>
+                            <div class="col-md-12 linksContainer">
+                                <ul class="links">
+                                    <li data-href="https://www.facebook.com/jeremy01rx"><a href="#" ><i class="fa fa-facebook fa-2x"></i></a></li>
+                                    <li data-href="http://instagram.com/power_ranjer"><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
+                                    <li data-href="https://www.linkedin.com/profile/view?id=144880505&trk=nav_responsive_tab_profile"><a href="#" ><i class="fa fa-linkedin fa-2x"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-8 pull-right RightContent">
+                    <div class="row-fluid">
                     <div class="myName col-md-12 centaurStyle uncontained">
                         <br/>
                         <div class="title">
@@ -50,7 +63,8 @@
                         </div>
                         <hr/>
                     </div>
-                    <div class="col-md-12 uncontained"></div>
+                    <br/>
+                    <!-- <div class="col-md-12 uncontained"></div> -->
                     <div class="mySkills col-md-12 contained">
                         <br/>
                         <div class="title centaurStyle">
@@ -74,7 +88,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-12 uncontained"></div>
+                    <!-- <div class="col-md-12 uncontained"></div> -->
+                    <br/>
                     <div class="myCareer col-md-12 contained">
                         <br/>
                         <div class="title centaurStyle">
@@ -82,9 +97,9 @@
                         </div>
                         <hr/>
                         <div class="content">
-                            <span><b>Fron-end/Back-end Web Developer</b></span>
+                            <span class="positionName"><b>Front-end/Back-end Web Developer</b></span>
                             <p>
-                                <span class="companyName">Zeresoft Software Development and Services</span>
+                                <a href="#" data-href="http://zeresoft.com/"><span class="companyName">Zeresoft Software Development and Services</span></a>
                                 <br>
                                 <span class="companyDate muted">November 2012 - Present</span>
                                 <br>
@@ -113,7 +128,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-12 uncontained"></div>
+                    <!-- <div class="col-md-12 uncontained"></div> -->
                     <div class="myEducation col-md-12 contained">
                         <br/>
                         <div class="title centaurStyle">
@@ -124,7 +139,7 @@
                             <table>
                                 <tr>
                                     <td>College</td>
-                                    <td>Central Luzon State University<br><span class="muted">Science City of Muñoz, Nueva Ecija, Ph</span></td>
+                                    <td><a href="#" data-href="https://clsu.edu.ph/">Central Luzon State University</a><br><span class="muted">Science City of Muñoz, Nueva Ecija, Ph</span></td>
                                     <td>2012</td>
                                 </tr>
                                 <tr>
@@ -139,6 +154,8 @@
                                 </tr>
                             </table>
                         </div>
+                    </div>
+                    <div class="col-md-12 uncontained visible-xs"></div>
                     </div>
                 </div>
             </div>
@@ -166,6 +183,10 @@
 	<script>
 		$(document).ready(function(){
 			$('.LeftContent,.LeftMask').height($('.RightContent').height())
-		})
+
+            $('.links li,a').on('click',function(){
+                window.open($(this).data('href'))
+            })
+        })
 	</script>
 </html>
