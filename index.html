@@ -19,7 +19,14 @@
 
 		<!-- <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'> -->
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-	</head>
+
+        <!-- 
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="imports/IconHoverEffects/css/default.css" />
+        <link rel="stylesheet" type="text/css" href="imports/IconHoverEffects/css/component.css" />
+        <script src="imports/IconHoverEffects/imports/IconHoverEffects/js/modernizr.custom.js"></script>
+	   -->
+    </head>
   	
 
   	<body>
@@ -187,6 +194,12 @@
             $('.links li,a').on('click',function(){
                 window.open($(this).data('href'))
             })
+
+            // $('.links li').mouseover(function(){
+            //     $(this).find('i').css({'border':'2px solid #ccc','background-color':'transparent','color':'#ccc !important'})
+            // }).mouseout(function(){
+            //     $(this).find('i').css({'border':'2px solid transparent','background-color':'#ccc','color':'#000'})
+            // })
         })
 	</script>
 </html>
