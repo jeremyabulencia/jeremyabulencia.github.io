@@ -64,7 +64,7 @@
                         </div>
                     </div>
                     <!-- <div class="col-md-12 uncontained"></div> -->
-                    <div class="myProfile col-md-12 contained">
+                    <div class="myProfile col-md-12 contained hide">
                         <br/>
                         <div class="title centaurStyle">
                             <center>PROFILE</center>
@@ -208,6 +208,19 @@
             // }).mouseout(function(){
             //     $(this).find('i').css({'border':'2px solid transparent','background-color':'#ccc','color':'#000'})
             // })
+
+            if(parseInt($(window).scrollTop()) + parseInt($(window).height()) == parseInt($(document).height()) ){
+                $('.mobileFooter').css({'opacity':'1'});
+            }else{
+                $('.mobileFooter').css({'opacity':'0.8'});
+            }
+        })
+        $(document).scroll(function(){
+            if( parseInt($(window).scrollTop()) + parseInt($(window).height()) == parseInt($(document).height()) ){
+                $('.mobileFooter').css({'opacity':'1'});
+            }else{
+                $('.mobileFooter').css({'opacity':'0.8'});
+            }
         })
 	</script>
     <script>
