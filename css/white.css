@@ -1,3 +1,62 @@
+@import url(http://weloveiconfonts.com/api/?family=brandico|entypo|fontawesome|fontelico|openwebicons|typicons|zocial);
+
+/* brandico */
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+}
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* fontelico */
+[class*="fontelico-"]:before {
+  font-family: 'fontelico', sans-serif;
+}
+
+/* openwebicons */
+[class*="openwebicons-"]:before {
+  font-family: 'OpenWeb Icons', sans-serif;
+}
+
+/* typicons */
+[class*="typicons-"]:before {
+  font-family: 'Typicons', sans-serif;
+}
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+
+@font-face{
+	font-family: 'Rain Tax';
+	src: url('font-styles/Rain Tax.otf');
+}
+@font-face{
+	font-family: 'Viking';
+	src: url('font-styles/Viking_n.tff');
+}
+@font-face{
+	font-family: 'Blade';
+	src: url('font-styles/Blade 2.ttf');
+}
+@font-face{
+	font-family: 'Gonjuring';
+	src: url('font-styles/THE GONjURING.ttf');
+}
+
+
+body{
+	letter-spacing: 2px;
+}
 .container{
 	position:absolute;
 	left:0;
@@ -60,7 +119,46 @@
 	z-index: 111;
 }
 .profileInfo .name{
-	font-family: 'quaadludes';
+	font-family: 'Gonjuring';
+	font-size: 18pt;
+	font-weight: 100;
+}
+.profileInfo ul{
+	list-style: none;
+}
+.profileInfo ul li{
+	margin:5px;
+}
+.profileInfo span{
+	line-height: 30px;
+	text-align: center;
+}
+.profileInfo ul li .linkIcon{
+	background-color:#000875;
+	border:1px solid #FFFFFF;
+	display:inline-block;
+	border:2px solid #FFFFFF;
+	width:30px;
+	height:30px;
+	border-radius:100%;
+}
+.profileInfo ul li .linkIcon:hover{
+	border:2px solid #04E013;
+	color:#04E013;
+}
+.profileInfo ul li div{
+	border:1px solid #FFF;
+	display:inline-block;
+	margin-left:-17px;
+	overflow: hidden;
+}
+.profileInfo ul li .linkText{
+	background-color:#FFFFFF;
+	color:#04E013;
+	height:30px;
+	margin-left:-30px;
+	display:inline-block;
+	z-index: -1;
 }
 @media (max-width: 768px){
 	.content{
