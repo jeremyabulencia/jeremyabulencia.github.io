@@ -149,8 +149,8 @@ body{
 	border-radius:100%;
 }
 .profileInfo ul li .linkIcon span:hover{
-	border:2px solid #04E013;
-	color:#04E013;
+	/*border:2px solid #04E013;*/
+	/*color:#04E013;*/
 }
 .profileInfo ul li .linkText{
 	background-color:#CCC;
@@ -160,9 +160,17 @@ body{
 	overflow: hidden;
 	margin-top:2px;
 	font-size: 10pt;
+	padding-right:3px;
+
+	-webkit-border-top-right-radius: 134px;
+	-webkit-border-bottom-right-radius: 134px;
+	-moz-border-radius-topright: 134px;
+	-moz-border-radius-bottomright: 134px;
+	border-top-right-radius: 134px;
+	border-bottom-right-radius: 134px;
 }
 .profileInfo ul li .linkText span{
-	color:#999;
+	color:#333;
 	float:right;
 	margin-left: 10px;
 }
