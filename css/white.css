@@ -128,37 +128,43 @@ body{
 }
 .profileInfo ul li{
 	margin:5px;
+	overflow: hidden;
 }
 .profileInfo span{
 	line-height: 30px;
 	text-align: center;
 }
 .profileInfo ul li .linkIcon{
+	position:absolute;
+	display: inline-block;
+	z-index: 999;
+	margin-left:-10px;
+}
+.profileInfo ul li .linkIcon span{
 	background-color:#000875;
-	border:1px solid #FFFFFF;
 	display:inline-block;
 	border:2px solid #FFFFFF;
 	width:30px;
 	height:30px;
 	border-radius:100%;
 }
-.profileInfo ul li .linkIcon:hover{
+.profileInfo ul li .linkIcon span:hover{
 	border:2px solid #04E013;
 	color:#04E013;
 }
-.profileInfo ul li div{
-	border:1px solid #FFF;
-	display:inline-block;
-	margin-left:-17px;
-	overflow: hidden;
-}
 .profileInfo ul li .linkText{
-	background-color:#FFFFFF;
-	color:#04E013;
-	height:30px;
-	margin-left:-30px;
+	background-color:#CCC;
+	border:1px solid #CCC;
 	display:inline-block;
-	z-index: -1;
+	height:28px;
+	overflow: hidden;
+	margin-top:2px;
+	font-size: 10pt;
+}
+.profileInfo ul li .linkText span{
+	color:#999;
+	float:right;
+	margin-left: 10px;
 }
 @media (max-width: 768px){
 	.content{

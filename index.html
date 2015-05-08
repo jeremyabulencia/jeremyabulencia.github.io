@@ -21,27 +21,34 @@
             <div class="subcontainer blue">
                 <div class="content">
                     <div class="profilePic">
-                        <img src="images/profilePics.jpg">
+                        <img src="images/profilePic.jpg">
                     </div>
                     <div class="profileInfo">
-                        <!-- <span class="name">JEREMY JORDAN J. ABULENCIA</span><br/> -->
-                        <!-- <span>WEB DEVELOPER</span><br/> -->
+                        <span class="name">JEREMY JORDAN J. ABULENCIA</span><br/>
+                        <span>WEB DEVELOPER</span><br/>
+
                         <ul>
                             <li>
-                                <span class="linkIcon brandico-facebook"></span>
-                                <div>
-                                    <span class="linkText">asdad</span>
+                                <div class="linkIcon">
+                                    <span class="brandico-facebook"></span>
+                                </div>
+                                <div class="linkText">
+                                    <span>www.facebook.com/jeremy01rx</span>
                                 </div>
                             </li>
                             <li>
-                                <span class="linkIcon brandico-instagram"></span>
-                                <div>
-                                    <span class="linkText">asdad</span>
+                                <div class="linkIcon">
+                                    <span class="brandico-instagram"></span>
+                                </div>
+                                <div class="linkText">
+                                    <span>@power_ranjer</span>
                                 </div>
                             <li>
-                                <span class="linkIcon brandico-linkedin"></span>
-                                <div>
-                                    <span class="linkText">asdad</span>
+                                <div class="linkIcon">
+                                    <span class="brandico-linkedin"></span>
+                                </div>
+                                <div class="linkText">
+                                    <span>asdad</span>
                                 </div>
                             </li>
                         </ul>
@@ -57,3 +64,17 @@
 
     <script src="js/jquery-1.10.2.js"></script>
 </html>
+<script>
+    $(document).ready(function(){
+        $('.linkText').each(function(){
+            $(this).css({'margin-left':'-'+$(this).width()+'px'})
+        })
+    })
+    $(document).on('click','.linkIcon',function(){
+        width = parseInt($(this).parent().find('.linkText').width()+15);
+        $('.linkText').each(function(){
+            $(this).animate({'margin-left':'-'+$(this).width()+'px'},100)
+        })
+        $(this).parent().find('.linkText').animate({'margin-left':'+='+width+'px'},200);
+    })
+</script>
