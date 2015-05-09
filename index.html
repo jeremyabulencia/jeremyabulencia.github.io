@@ -69,11 +69,26 @@
             $(this).css({'margin-left':'-'+$(this).width()+'px'})
         })
     })
-    $(document).on('click','.linkIcon',function(){
-        width = parseInt($(this).parent().find('.linkText').width()+15);
-        $('.linkText').each(function(){
-            $(this).animate({'margin-left':'-'+$(this).width()+'px'},100)
-        })
-        $(this).parent().find('.linkText').animate({'margin-left':'+='+width+'px'},200);
+    $('.linkIcon').on('click',function(){
+        if(!$(this).hasClass('active')){
+            width = parseInt($(this).parent().find('.linkText').width()+15);
+            $('.linkText').each(function(){
+                $(this).parent().find('.linkIcon').removeClass('active');
+                $(this).animate({'margin-left':'-'+$(this).width()+'px'},100)
+            })
+            $(this).addClass('active');
+            $(this).parent().find('.linkText').animate({'margin-left':'+='+width+'px'},200);
+        }
     })
+    // $(document).on('click','.linkIcon',function(){
+    //     if(!$(this).hasClass('active')){
+    //         width = parseInt($(this).parent().find('.linkText').width()+15);
+    //         $('.linkText').each(function(){
+    //             $(this).parent().find('.linkIcon').removeClass('active');
+    //             $(this).animate({'margin-left':'-'+$(this).width()+'px'},100)
+    //         })
+    //         $(this).addClass('active');
+    //         $(this).parent().find('.linkText').animate({'margin-left':'+='+width+'px'},200);
+    //     }
+    // })
 </script>
