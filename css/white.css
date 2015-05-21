@@ -1,4 +1,4 @@
-@import url(http://weloveiconfonts.com/api/?family=brandico|entypo|fontawesome|fontelico|openwebicons|typicons|zocial);
+@import url(http://weloveiconfonts.com/api/?family=brandico|entypo|fontawesome|fontelico|iconicfill|iconicstroke|maki|openwebicons|typicons|zocial);
 
 /* brandico */
 [class*="brandico-"]:before {
@@ -18,6 +18,21 @@
 /* fontelico */
 [class*="fontelico-"]:before {
   font-family: 'fontelico', sans-serif;
+}
+
+/* iconicfill */
+[class*="iconicfill-"]:before {
+  font-family: 'IconicFill', sans-serif;
+}
+
+/* iconicstroke */
+[class*="iconicstroke-"]:before {
+  font-family: 'IconicStroke', sans-serif;
+}
+
+/* maki */
+[class*="maki-"]:before {
+  font-family: 'maki', sans-serif;
 }
 
 /* openwebicons */
