@@ -146,21 +146,14 @@ body{
     z-index: 99;
     width:100%;
 }
-.contactInfo .mobile{
-    margin:auto;
-    width:100%;
-}
-.contactInfo .location,{
-    margin:auto;
-    width:100%;
-}
-.contactInfo .email{
+.contactInfo .mobile, .contactInfo .location, .contactInfo .email{
     margin:auto;
     width:100%;
 }
 .contactInfo .icon{
     display: inline-block;
-    padding:0px 5px;
+    text-align: right;
+    padding:0px 10px;
     width:10%;
 }
 .contactInfo .text{
