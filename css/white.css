@@ -144,17 +144,27 @@ body{
     margin-top:20px;
     display: inline-block;
     z-index: 99;
+    width:100%;
 }
-.contactInfo div{
+.contactInfo .mobile{
     margin:auto;
-    width:90%;
+    width:100%;
+}
+.contactInfo .location,{
+    margin:auto;
+    width:100%;
+}
+.contactInfo .email{
+    margin:auto;
+    width:100%;
 }
 .contactInfo .icon{
-    padding:0px 6px;
+    display: inline-block;
+    padding:0px 5px;
+    width:10%;
 }
 .contactInfo .text{
-    padding:0px 5px;
-    text-align: right;
+    display: inline-block;
 }
 
 @media (max-width: 700px){
