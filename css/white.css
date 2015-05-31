@@ -82,7 +82,10 @@ body{
     left: 0;
     width: 100%;
     height: 20%;
-    background-color: rgba(52,152,219,0.3);
+    background-color: #274559;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(10, 10, 10, 0.75);
+    -moz-box-shadow:    0px 3px 5px 0px rgba(10, 10, 10, 0.75);
+    box-shadow:         0px 3px 5px 0px rgba(10, 10, 10, 0.75);
 }
 .content{
     position:relative;
@@ -104,13 +107,25 @@ body{
     width:75%;
     height:100%;
     color: #fff;
+    border-left:1px solid #131313;
+    background-color:#282828;
+    -webkit-box-shadow: -3px 0px 5px 0px rgba(10, 10, 10, 0.75);
+    -moz-box-shadow:    -3px 0px 5px 0px rgba(10, 10, 10, 0.75);
+    box-shadow:         -3px 0px 5px 0px rgba(10, 10, 10, 0.75);
 }
 .profilePic{
-    position:relative;
-    display:block;
+    text-align: center;
 }
 .profilePic img{
-    width:100%;
+    margin-top:30px;
+    width:150px;
+    height:150px;
+    padding:5px;
+    border-radius: 100%;
+    border:1px solid #232323;
+    -webkit-box-shadow: 0px 1px 3px 3px rgba(10, 10, 10, 0.75);
+    -moz-box-shadow:    0px 1px 3px 3px rgba(10, 10, 10, 0.75);
+    box-shadow:         0px 1px 3px 3px rgba(10, 10, 10, 0.75);
 }
 .contentPanel{
     position:absolute;
@@ -124,7 +139,10 @@ body{
     background-color:#fff;
     color:#000;
     margin-top:-30px;
-    min-height:105%;
+    min-height:100%;
+    -webkit-box-shadow: 5px 0px 5px 1px rgba(10, 10, 10, 0.75);
+    -moz-box-shadow:    5px 0px 5px 1px rgba(10, 10, 10, 0.75);
+    box-shadow:         5px 0px 5px 1px rgba(10, 10, 10, 0.75);
 }
 .inner{
     margin:auto;
@@ -132,11 +150,9 @@ body{
     height:100%;
 }
 .myName{
-    position:absolute;
-    bottom:0;
     text-align: center;
-    padding:0px 5px;
-    background-color: rgba(0,0,0,0.7);
+    padding:10px 5px;
+    background-color: #274559;
 }
 .contactInfo{
     position:absolute;
@@ -146,9 +162,18 @@ body{
     z-index: 99;
     width:100%;
 }
-.contactInfo .mobile, .contactInfo .location, .contactInfo .email{
-    margin:auto;
+.contactInfo .contactPanel{
     width:100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color:#282828;
+}
+.contactInfo .contactPanel:hover{
+    background-color:#232323;
+    -webkit-box-shadow: inset 0px 3px 5px 0px rgba(20, 20, 20, 0.75);
+    -moz-box-shadow:    inset 0px 3px 5px 0px rgba(20, 20, 20, 0.75);
+    box-shadow:         inset 0px 3px 5px 0px rgba(20, 20, 20, 0.75);
+    border-bottom: 1px solid #232323;
 }
 .contactInfo .icon{
     display: inline-block;
@@ -158,6 +183,7 @@ body{
 }
 .contactInfo .text{
     display: inline-block;
+    padding-left: 5px;
 }
 
 @media (max-width: 700px){
