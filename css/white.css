@@ -76,6 +76,9 @@ body{
     height:100%;
     background-color:#232323;
 }
+ul{
+    list-style: none;
+}
 .header{
     position:absolute;
     top: 0;
@@ -109,9 +112,10 @@ body{
     color: #fff;
     border-left:1px solid #131313;
     background-color:#282828;
-    -webkit-box-shadow: -3px 0px 5px 0px rgba(10, 10, 10, 0.75);
-    -moz-box-shadow:    -3px 0px 5px 0px rgba(10, 10, 10, 0.75);
-    box-shadow:         -3px 0px 5px 0px rgba(10, 10, 10, 0.75);
+    -webkit-box-shadow: -3px 3px 5px 0px rgba(10, 10, 10, 0.75);
+    -moz-box-shadow:    -3px 3px 5px 0px rgba(10, 10, 10, 0.75);
+    box-shadow:         -3px 3px 5px 0px rgba(10, 10, 10, 0.75);
+    margin-top:-30px;
 }
 .profilePic{
     text-align: center;
@@ -135,24 +139,22 @@ body{
     display:inline;
 }
 .mainContent{
+    position:relative;
     width:90%;
     background-color:#fff;
     color:#000;
     margin-top:-30px;
     min-height:100%;
-    -webkit-box-shadow: 5px 0px 5px 1px rgba(10, 10, 10, 0.75);
-    -moz-box-shadow:    5px 0px 5px 1px rgba(10, 10, 10, 0.75);
-    box-shadow:         5px 0px 5px 1px rgba(10, 10, 10, 0.75);
-}
-.inner{
-    margin:auto;
-    width:95%;
-    height:100%;
+    overflow: hidden;
+    -webkit-box-shadow: 3px 3px 5px 1px rgba(10, 10, 10, 0.75);
+    -moz-box-shadow:    3px 3px 5px 1px rgba(10, 10, 10, 0.75);
+    box-shadow:         3px 3px 5px 1px rgba(10, 10, 10, 0.75);
 }
 .myName{
     text-align: center;
     padding:10px 5px;
     background-color: #274559;
+    border:2px solid #274559;
 }
 .contactInfo{
     position:absolute;
@@ -167,6 +169,11 @@ body{
     padding-top: 5px;
     padding-bottom: 5px;
     background-color:#282828;
+    color:#CCC;
+    border-bottom:1px solid #CCC;
+}
+.contactInfo .contactPanel:first-child{
+    margin-top: 10px !important;
 }
 .contactInfo .contactPanel:hover{
     background-color:#232323;
@@ -185,7 +192,36 @@ body{
     display: inline-block;
     padding-left: 5px;
 }
-
+.mobile{
+    margin-top: 25px;
+}
+.bdLabel{
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    border:1px solid black;
+    width:50%;
+    display: inline;
+   /* -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);*/
+}
+.bdLabel ul{
+    display: inline-block;
+    /*float:left;*/
+    padding:0px;
+    margin:0px;
+}
+.bdLabel li{
+    float:left;
+    display:block;
+    border:1px solid black;
+    
+}
+.bdContent{
+    float:right;
+    width:95%;
+}
 @media (max-width: 700px){
     .linkPanel{
         display:none;
