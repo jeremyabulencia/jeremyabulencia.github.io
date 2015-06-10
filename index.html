@@ -36,18 +36,18 @@
                         </div>
                     </div>
                     <div class="socials">
-                        <div class="contactPanel mobile">
+                        <div class="contactPanel mobile" data-link="https://www.facebook.com/jeremy01rx">
                             <div class="icon">
                                 <span class="brandico-facebook"></span>
                             </div>
                         </div>
-                        <div class="contactPanel location">
+                        <div class="contactPanel location" data-link="https://ph.linkedin.com/pub/jeremy-jordan-abulencia/40/62a/a75">
                             <div class="icon">
                                 <span class="brandico-linkedin"></span>
                             </div>                            
                         </div>
                         <div class="contactPanel email">
-                            <div class="icon">
+                            <div class="icon" data-link="">
                                 <span class="brandico-github"></span>
                             </div>
                         </div>
@@ -72,5 +72,7 @@
     <script src="js/jquery-1.10.2.js"></script>
 </html>
 <script>
-
+    $(document).on('click','.contactPanel',function(){
+        window.open($(this).data('link'));
+    })
 </script>

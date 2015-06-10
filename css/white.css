@@ -230,7 +230,7 @@ a{
     width:95%;
 }
 
-@media (max-width: 515px){
+@media (max-width: 800px){
     .linkPanel{
         display:none !important;
     }
