@@ -56,13 +56,21 @@
             </div>
             <div class="contentPanel">
                 <div class="mainContent">
-                    <!-- <div class="bdLabel"> -->
-                       <!--  <ul>
-                            <li>SKILLS</li>
-                            <li>CAREER</li>
-                        </ul> -->
-                    <!-- </div> -->
-                    <!-- <div class="bdContent"></div> -->
+                    <div class="subContent" style="background-color:red;">
+                        <div class="fixed">
+                            nkjnajns dan
+                        </div>
+                    </div>
+                    <div class="subContent" style="background-color:blue;">
+                        <div class="fixed">
+                            h8283h4 gr
+                        </div>
+                    </div>
+                    <div class="subContent" style="background-color:green;">
+                        <div class="fixed">
+                            jnjkiauf iuadf
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -72,5 +80,22 @@
     <script src="js/jquery-1.10.2.js"></script>
 </html>
 <script>
+    // alert($('.mainContent').offset().top)
+    // $('.fixed').each(function(){
+    //     top = $('.mainContent').offset().top;
+    //     left = $('.mainContent').offset().left;
+    //     $(this).css({
+    //         'position':'fixed',
+    //         'top':top+'px',
+    //         'left':left+'px',
+    //         'z-index':'999'
+    //     })
+    // })
+    $('.fixed').css({
+        'position':'fixed !important',
+        'top':top+'px !important',
+        'left':left+'px !important',
+        'z-index':'999 !important'
+    })
 
 </script>
