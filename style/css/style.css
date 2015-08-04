@@ -2,31 +2,32 @@
 body {
   padding: 0px;
   margin: 0px;
+  overflow-x: hidden;
 }
 
-/* line 8, ../scss/style.scss */
+/* line 9, ../scss/style.scss */
 .maxWidth, .headWrap, .head, .switch {
   width: 100% !important;
 }
 
-/* line 11, ../scss/style.scss */
-.absolute, .headWrap, .content .subContainer .subDetails, .switch {
+/* line 12, ../scss/style.scss */
+.absolute, .headWrap, .switch {
   position: absolute;
 }
 
-/* line 14, ../scss/style.scss */
-.relative, .head, .midHead, .content, .content .Details, .content .subContainer {
+/* line 15, ../scss/style.scss */
+.relative, .head, .midHead, .content, .content .Details {
   position: relative;
 }
 
-/* line 17, ../scss/style.scss */
+/* line 18, ../scss/style.scss */
 .shadow, .head {
   -webkit-box-shadow: 0px 2px 8px 0px rgba(192, 192, 192, 0.75);
   -moz-box-shadow: 0px 2px 8px 0px rgba(192, 192, 192, 0.75);
   box-shadow: 0px 2px 8px 0px rgba(192, 192, 192, 0.75);
 }
 
-/* line 23, ../scss/style.scss */
+/* line 24, ../scss/style.scss */
 .headWrap {
   top: 0px;
   left: 0px;
@@ -35,7 +36,7 @@ body {
   z-index: 100;
 }
 
-/* line 32, ../scss/style.scss */
+/* line 33, ../scss/style.scss */
 .head {
   background-image: url("../../images/header.jpg");
   background-attachment: fixed;
@@ -44,62 +45,62 @@ body {
   z-index: 99;
 }
 
-/* line 42, ../scss/style.scss */
+/* line 43, ../scss/style.scss */
 .midHead {
   height: 150px;
   background-image: url("../../images/header.jpg");
   background-attachment: fixed;
 }
-/* line 48, ../scss/style.scss */
+/* line 49, ../scss/style.scss */
 .midHead ul {
   list-style: none;
   margin: 0px;
 }
 
-/* line 53, ../scss/style.scss */
+/* line 54, ../scss/style.scss */
 .content {
   margin-top: -150px;
-  background-color: #F5F5F5;
+  /*background-color:#F5F5F5;*/
   min-height: 550px;
   padding-top: 20px;
+  background-image: url("../../images/background.png");
 }
-/* line 60, ../scss/style.scss */
+/* line 62, ../scss/style.scss */
+.content .Details::-webkit-scrollbar {
+  display: none;
+}
+/* line 65, ../scss/style.scss */
 .content .Details {
   border: 1px solid #C5C5C5;
-  width: 80%;
+  max-width: 1020px;
+  max-height: 400px;
   margin: auto;
-  height: 100%;
+  padding: 3px 3px 3px 3px;
+  overflow-x: scroll;
+  display: block;
 }
-/* line 70, ../scss/style.scss */
-.content .subContainer .crumbs {
+/* line 75, ../scss/style.scss */
+.content .Details .subDetails {
+  border: 1px solid #C5C5C5;
+  width: 250px;
+  height: 400px;
   display: inline-block;
-  /*border:1px solid black;*/
-  width: 5%;
-  min-height: 100px;
+  position: static;
 }
-/* line 76, ../scss/style.scss */
-.content .subContainer .crumbs div {
-  -ms-transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-}
-/* line 81, ../scss/style.scss */
-.content .subContainer .subDetails {
-  top: 0px;
+/* line 82, ../scss/style.scss */
+.content .Details .subDetails .category {
+  position: absolute;
+  bottom: 0px;
   right: 0px;
-  display: inline-block;
-  /*border:1px solid black;*/
-  width: 94%;
-  height: 100%;
 }
 
-/* line 93, ../scss/style.scss */
+/* line 91, ../scss/style.scss */
 .switch {
   top: -15px;
   z-index: 101;
   border: 1px solid transparent;
 }
-/* line 100, ../scss/style.scss */
+/* line 98, ../scss/style.scss */
 .switch .switchBtn {
   margin: auto;
   width: 30px;
@@ -110,7 +111,11 @@ body {
   text-align: center;
   border: 1px solid #E0E0E0;
 }
-/* line 110, ../scss/style.scss */
+/* line 107, ../scss/style.scss */
+.switch .switchBtn img {
+  width: 100%;
+}
+/* line 111, ../scss/style.scss */
 .switch .switchBtn:hover {
   cursor: pointer;
 }
