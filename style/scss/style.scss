@@ -65,24 +65,31 @@ $headBackground:url('../../images/header.jpg');
 	.Details{
 		@extend .relative;
 		border:1px solid #C5C5C5;
-		max-width:1020px;
-		max-height: 400px;
+		max-width:100%;
 		margin:auto;
 		padding:3px 3px 3px 3px;
 		overflow-x:scroll;
 		display:block;
 		
-		.subDetails{
-			border:1px solid #C5C5C5;
-			width:250px;
-			height:400px;
-			display: inline-block;
-			position:static;
+		.wrapper{
+			width:1020px;
+			display:block;
+			margin:auto !important;
 
-			.category{
-				position:absolute;
-				bottom:0px;
-				right:0px;
+			.subDetails{
+				border:1px solid #C5C5C5;
+				width:250px;
+				height:400px;
+				display: inline-block;
+				float:left;
+				margin-right:3px;
+				position:relative;
+
+				.category{
+					position:absolute;
+					bottom:0px;
+					right:0px;
+				}
 			}
 		}
 	}
