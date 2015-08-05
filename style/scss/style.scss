@@ -4,6 +4,11 @@ body{
 	overflow-x:hidden;
 	font-size: 100%;
 }
+$jsColor:#ffda3e;
+$htmlColor:#f16529;
+$phpColor:#6082bb;
+$otherColor:#6cf556;
+
 $headHeight:250px;
 $hiddenHeadHeight:150px;
 $headBackground:url('../../images/header.jpg');
@@ -21,7 +26,14 @@ $headBackground:url('../../images/header.jpg');
 	-moz-box-shadow: 0px 2px 8px 0px rgba(192,192,192,0.75);
 	box-shadow: 0px 2px 8px 0px rgba(192,192,192,0.75);
 }
-
+.wrap{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.65);
+}
 .headWrap{
 	@extend .absolute;
 	@extend .maxWidth;
@@ -76,23 +88,41 @@ $headBackground:url('../../images/header.jpg');
 			width:1020px;
 			display:block;
 			margin:auto !important;
+		}
 
-			.subDetails{
-				border:1px solid #C5C5C5;
-				width:24%;
-				height:400px;
-				display: inline-block;
-				float:left;
-				margin-right:3px;
-				position:relative;
+		.subDetails{
+			border:1px solid #C5C5C5;
+			width:24%;
+			height:400px;
+			display: inline-block;
+			float:left;
+			margin-right:3px;
+			position:relative;
 
-				.category{
-					position:absolute;
-					bottom:5px;
-					right:5px;
-					font-size: 2.2em;
-				}
+			.category{
+				position:absolute;
+				bottom:5px;
+				right:10px;
+				font-size: 2.2em;
+				color:#CCCCCC;
 			}
+			ul{
+				color:#FFFFFF;
+				position:relative;
+				z-index: 999;
+			}
+		}
+		#html{
+			background-color: $htmlColor;
+		}
+		#js{
+			background-color: $jsColor;
+		}
+		#php{
+			background-color: $phpColor;
+		}
+		#other{
+			background-color: $otherColor;
 		}
 	}
 
