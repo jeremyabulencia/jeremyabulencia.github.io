@@ -1,92 +1,130 @@
+/* line 1, ../scss/style.scss */
 body {
   padding: 0px;
   margin: 0px;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-size: 100%;
+}
 
+/* line 10, ../scss/style.scss */
 .maxWidth, .headWrap, .head, .switch {
-  width: 100% !important; }
+  width: 100% !important;
+}
 
+/* line 13, ../scss/style.scss */
 .absolute, .headWrap, .switch {
-  position: absolute; }
+  position: absolute;
+}
 
+/* line 16, ../scss/style.scss */
 .relative, .head, .midHead, .content, .content .Details {
-  position: relative; }
+  position: relative;
+}
 
+/* line 19, ../scss/style.scss */
 .shadow, .head {
   -webkit-box-shadow: 0px 2px 8px 0px rgba(192, 192, 192, 0.75);
   -moz-box-shadow: 0px 2px 8px 0px rgba(192, 192, 192, 0.75);
-  box-shadow: 0px 2px 8px 0px rgba(192, 192, 192, 0.75); }
+  box-shadow: 0px 2px 8px 0px rgba(192, 192, 192, 0.75);
+}
 
+/* line 25, ../scss/style.scss */
 .headWrap {
   top: 0px;
   left: 0px;
   height: 250px;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: 100; }
+  z-index: 100;
+}
 
+/* line 34, ../scss/style.scss */
 .head {
   background-image: url("../../images/header.jpg");
   background-attachment: fixed;
   height: 250px;
   background-color: red;
-  z-index: 99; }
+  z-index: 99;
+}
 
+/* line 44, ../scss/style.scss */
 .midHead {
   height: 150px;
   background-image: url("../../images/header.jpg");
-  background-attachment: fixed; }
-  .midHead ul {
-    list-style: none;
-    margin: 0px; }
+  background-attachment: fixed;
+}
+/* line 50, ../scss/style.scss */
+.midHead ul {
+  list-style: none;
+  margin: 0px;
+}
 
+/* line 55, ../scss/style.scss */
 .content {
   margin-top: -150px;
   /*background-color:#F5F5F5;*/
   min-height: 550px;
   padding-top: 20px;
-  background-image: url("../../images/background.png"); }
-  .content .Details::-webkit-scrollbar {
-    display: none; }
-  .content .Details {
-    border: 1px solid #C5C5C5;
-    max-width: 100%;
-    margin: auto;
-    padding: 3px 3px 3px 3px;
-    overflow-x: scroll;
-    display: block; }
-    .content .Details .wrapper {
-      width: 1020px;
-      display: block;
-      margin: auto !important; }
-      .content .Details .wrapper .subDetails {
-        border: 1px solid #C5C5C5;
-        width: 250px;
-        height: 400px;
-        display: inline-block;
-        float: left;
-        margin-right: 3px;
-        position: relative; }
-        .content .Details .wrapper .subDetails .category {
-          position: absolute;
-          bottom: 0px;
-          right: 0px; }
+  background-image: url("../../images/background.png");
+}
+/* line 63, ../scss/style.scss */
+.content .Details::-webkit-scrollbar {
+  display: none;
+}
+/* line 66, ../scss/style.scss */
+.content .Details {
+  border: 1px solid #C5C5C5;
+  max-width: 100%;
+  margin: auto;
+  padding: 3px 3px 3px 3px;
+  overflow-x: scroll;
+  display: block;
+}
+/* line 75, ../scss/style.scss */
+.content .Details .wrapper {
+  width: 1020px;
+  display: block;
+  margin: auto !important;
+}
+/* line 80, ../scss/style.scss */
+.content .Details .wrapper .subDetails {
+  border: 1px solid #C5C5C5;
+  width: 24%;
+  height: 400px;
+  display: inline-block;
+  float: left;
+  margin-right: 3px;
+  position: relative;
+}
+/* line 89, ../scss/style.scss */
+.content .Details .wrapper .subDetails .category {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 2.2em;
+}
 
+/* line 100, ../scss/style.scss */
 .switch {
   top: -15px;
   z-index: 101;
-  border: 1px solid transparent; }
-  .switch .switchBtn {
-    margin: auto;
-    width: 30px;
-    height: 30px;
-    background-color: #E0E0E0;
-    border-radius: 50%;
-    line-height: 30px;
-    text-align: center;
-    border: 1px solid #E0E0E0; }
-    .switch .switchBtn img {
-      width: 100%; }
-  .switch .switchBtn:hover {
-    cursor: pointer; }
-
-/*# sourceMappingURL=style.css.map */
+  border: 1px solid transparent;
+}
+/* line 107, ../scss/style.scss */
+.switch .switchBtn {
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  background-color: #E0E0E0;
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #E0E0E0;
+}
+/* line 116, ../scss/style.scss */
+.switch .switchBtn img {
+  width: 100%;
+}
+/* line 120, ../scss/style.scss */
+.switch .switchBtn:hover {
+  cursor: pointer;
+}
