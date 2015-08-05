@@ -10,14 +10,17 @@ body {
 .maxWidth, .headWrap, .head, .switch {
   width: 100% !important;
 }
+
 /* line 13, ../scss/style.scss */
 .absolute, .headWrap, .switch {
   position: absolute;
 }
+
 /* line 16, ../scss/style.scss */
 .relative, .head, .midHead, .content, .content .Details {
   position: relative;
 }
+
 /* line 19, ../scss/style.scss */
 .shadow, .head {
   -webkit-box-shadow: 0px 2px 8px 0px rgba(192, 192, 192, 0.75);
@@ -33,6 +36,7 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 100;
 }
+
 /* line 34, ../scss/style.scss */
 .head {
   background-image: url("../../images/header.jpg");
@@ -41,6 +45,7 @@ body {
   background-color: red;
   z-index: 99;
 }
+
 /* line 44, ../scss/style.scss */
 .midHead {
   height: 150px;
@@ -52,6 +57,7 @@ body {
   list-style: none;
   margin: 0px;
 }
+
 /* line 55, ../scss/style.scss */
 .content {
   margin-top: -150px;
