@@ -112,7 +112,7 @@ body {
   .switch .switchBtn:hover {
     cursor: pointer; }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 976px) {
   .wrapper {
     width: 100% !important; }
 
