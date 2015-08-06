@@ -118,6 +118,7 @@ body {
 
   .subDetails {
     min-height: 150px !important;
-    min-width: 100% !important; } }
+    min-width: 100% !important;
+    font-size: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
