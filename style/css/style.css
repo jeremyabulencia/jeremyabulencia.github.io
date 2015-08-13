@@ -1,124 +1,248 @@
+/* line 1, ../scss/style.scss */
 body {
   padding: 0px;
   margin: 0px;
   overflow-x: hidden;
-  font-size: 100%; }
+  font-size: 100%;
+}
 
+/* line 15, ../scss/style.scss */
+.hide {
+  display: none;
+}
+
+/* line 18, ../scss/style.scss */
 .maxWidth, .headWrap, .head, .switch {
-  width: 100% !important; }
+  width: 100% !important;
+}
 
+/* line 21, ../scss/style.scss */
 .absolute, .headWrap, .switch {
-  position: absolute; }
-
-.relative, .head, .midHead, .content, .content .Details {
-  position: relative; }
-
-.shadow, .head {
-  -webkit-box-shadow: 0px 2px 8px 0px rgba(192, 192, 192, 0.75);
-  -moz-box-shadow: 0px 2px 8px 0px rgba(192, 192, 192, 0.75);
-  box-shadow: 0px 2px 8px 0px rgba(192, 192, 192, 0.75); }
-
-.wrap {
   position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.65); }
+}
 
+/* line 24, ../scss/style.scss */
+.relative, .head, .midHead {
+  position: relative;
+}
+
+/* line 27, ../scss/style.scss */
+.shadow, .head, .content .Details .subDetails {
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+/* line 41, ../scss/style.scss */
 .headWrap {
   top: 0px;
   left: 0px;
   height: 250px;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: 100; }
+  z-index: 100;
+  color: #FFF;
+}
+/* line 51, ../scss/style.scss */
+.headWrap .profile {
+  border: 1px solid #FFf;
+  width: 80%;
+  margin: auto;
+}
 
+/* line 57, ../scss/style.scss */
 .head {
   background-image: url("../../images/header.jpg");
   background-attachment: fixed;
   height: 250px;
   background-color: red;
-  z-index: 99; }
+  z-index: 99;
+  color: #fff;
+}
 
+/* line 68, ../scss/style.scss */
 .midHead {
   height: 150px;
   background-image: url("../../images/header.jpg");
-  background-attachment: fixed; }
-  .midHead ul {
-    list-style: none;
-    margin: 0px; }
+  background-attachment: fixed;
+}
+/* line 74, ../scss/style.scss */
+.midHead ul {
+  list-style: none;
+  margin: 0px;
+}
 
+/* line 79, ../scss/style.scss */
 .content {
-  margin-top: -150px;
+  /*margin-top:-$hiddenHeadHeight;*/
   /*background-color:#F5F5F5;*/
   min-height: 550px;
-  padding-top: 20px;
-  background-image: url("../../images/background.png"); }
-  .content .Details::-webkit-scrollbar {
-    display: none; }
-  .content .Details {
-    border: 1px solid #C5C5C5;
-    max-width: 100%;
-    margin: auto;
-    padding: 3px 3px 3px 3px;
-    overflow-x: scroll;
-    display: block; }
-    .content .Details .wrapper {
-      width: 1020px;
-      display: block;
-      margin: auto !important; }
-    .content .Details .subDetails {
-      border: 1px solid #C5C5C5;
-      width: 24%;
-      min-height: 400px;
-      display: inline-block;
-      float: left;
-      margin-right: 3px;
-      position: relative; }
-      .content .Details .subDetails .category {
-        position: absolute;
-        bottom: 5px;
-        right: 10px;
-        font-size: 2.2em;
-        color: #CCCCCC; }
-      .content .Details .subDetails ul {
-        color: #FFFFFF;
-        position: relative;
-        z-index: 999; }
-    .content .Details #html {
-      background-color: #f16529; }
-    .content .Details #js {
-      background-color: #ffda3e; }
-    .content .Details #php {
-      background-color: #6082bb; }
-    .content .Details #other {
-      background-color: #6cf556; }
+  background-image: url("../../images/background.png");
+}
+/* line 85, ../scss/style.scss */
+.content .Details::-webkit-scrollbar {
+  display: none;
+}
+/* line 88, ../scss/style.scss */
+.content .Details {
+  /*@extend .relative;*/
+  max-width: 100%;
+  margin: auto;
+  padding: 3px 3px 3px 3px;
+  overflow-x: scroll;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* line 97, ../scss/style.scss */
+.content .Details .wrapper {
+  width: 1020px;
+  display: block;
+  margin: auto !important;
+}
+/* line 103, ../scss/style.scss */
+.content .Details .subDetails {
+  border: 1px solid #444444;
+  width: 24%;
+  min-height: 400px;
+  display: inline-block;
+  float: left;
+  margin-top: 10px;
+  margin-right: 5px;
+  position: relative;
+}
+/* line 113, ../scss/style.scss */
+.content .Details .subDetails .category {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  font-size: 2.2em;
+  color: #CCCCCC;
+}
+/* line 120, ../scss/style.scss */
+.content .Details .subDetails ul {
+  color: #FFFFFF;
+  position: relative;
+  z-index: 999;
+}
+/* line 125, ../scss/style.scss */
+.content .Details .subDetails .wrap {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* line 129, ../scss/style.scss */
+.content .Details .careerDetails {
+  min-height: 100px;
+  margin: auto;
+  width: 100%;
+}
+/* line 134, ../scss/style.scss */
+.content .Details .careerDetails .careerName {
+  width: 25%;
+  text-align: center;
+  float: left;
+}
+/* line 139, ../scss/style.scss */
+.content .Details .careerDetails .careerName .companyName {
+  color: #ccc;
+}
+/* line 143, ../scss/style.scss */
+.content .Details .careerDetails .careerName img {
+  max-width: 50%;
+  max-height: 50%;
+  margin: auto;
+}
+/* line 149, ../scss/style.scss */
+.content .Details .careerDetails .careerInfo {
+  padding-top: 10px;
+  width: 74%;
+  color: #ccc;
+}
+/* line 155, ../scss/style.scss */
+.content .Details #html {
+  background-color: #f16529;
+}
+/* line 158, ../scss/style.scss */
+.content .Details #js {
+  background-color: #ffda3e;
+}
+/* line 161, ../scss/style.scss */
+.content .Details #php {
+  background-color: #6082bb;
+}
+/* line 164, ../scss/style.scss */
+.content .Details #other {
+  background-color: #6cf556;
+}
 
+/* line 170, ../scss/style.scss */
 .switch {
   top: -15px;
   z-index: 101;
-  border: 1px solid transparent; }
-  .switch .switchBtn {
-    margin: auto;
-    width: 30px;
-    height: 30px;
-    background-color: #E0E0E0;
-    border-radius: 50%;
-    line-height: 30px;
-    text-align: center;
-    border: 1px solid #E0E0E0; }
-    .switch .switchBtn img {
-      width: 100%; }
-  .switch .switchBtn:hover {
-    cursor: pointer; }
+  border: 1px solid transparent;
+}
+/* line 177, ../scss/style.scss */
+.switch .switchBtn {
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  background-color: #E0E0E0;
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #E0E0E0;
+}
+/* line 186, ../scss/style.scss */
+.switch .switchBtn img {
+  width: 100%;
+}
+/* line 190, ../scss/style.scss */
+.switch .switchBtn:hover {
+  cursor: pointer;
+}
 
 @media screen and (max-width: 1020px) {
+  /* line 196, ../scss/style.scss */
   .wrapper {
-    width: 100% !important; }
+    width: 100% !important;
+  }
 
-  .subDetails {
-    min-height: 150px !important;
-    min-width: 100% !important;
-    font-size: 120%; } }
+  /* line 200, ../scss/style.scss */
+  #skills .subDetails {
+    display: block !important;
+    min-height: 100px;
+    width: 100%;
+    margin-top: 2px !important;
+  }
 
-/*# sourceMappingURL=style.css.map */
+  /*.subDetails{
+  	min-height: 150px !important;
+  	min-width:100% !important;
+  	font-size: 120%;
+  }*/
+  /* line 213, ../scss/style.scss */
+  #career .careerName, #career .careerInfo {
+    width: 100%;
+  }
+  /* line 217, ../scss/style.scss */
+  #career .careerName {
+    text-align: left;
+  }
+  /* line 220, ../scss/style.scss */
+  #career .careerName img {
+    max-height: 25%;
+    max-width: 25%;
+    float: left;
+  }
+  /* line 225, ../scss/style.scss */
+  #career .careerName .companyName {
+    font-size: 14pt;
+  }
+
+  /* line 232, ../scss/style.scss */
+  .headWrap .profile {
+    width: 100%;
+  }
+}
