@@ -1,4 +1,62 @@
+.hexagon, body #content .hex {
+  position: relative;
+  width: 300px;
+  height: 173.21px;
+  background-color: transparent;
+  margin: 86.60px 0; }
+
+.hexagon:before, body #content .hex:before,
+.hexagon:after,
+body #content .hex:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent; }
+
+.hexagon:before, body #content .hex:before {
+  bottom: 100%;
+  border-bottom: 86.6px solid transparent; }
+
+.hexagon:after, body #content .hex:after {
+  top: 100%;
+  width: 0;
+  border-top: 86.6px solid transparent; }
+
 body {
-  background-color: black; }
+  padding: 0px;
+  margin: 0px; }
+  body #tag {
+    display: none;
+    position: fixed;
+    top: 0px;
+    height: 20px;
+    width: 100%;
+    background-color: navy;
+    padding: 10px 0px;
+    z-index: 99999;
+    text-align: right; }
+    body #tag span {
+      margin: 10px;
+      color: #F0F0F0; }
+  body #head {
+    height: 200px;
+    width: 100%;
+    background-image: url("../images/corvette.jpg");
+    /*background-size:100% 400px;*/
+    background-color: blue;
+    position: fixed;
+    top: 0px;
+    /*@include blur-effect(5px);*/ }
+    body #head #main-head {
+      /*width:100%;
+      height:100%;
+      background-color:rgba(0,0,0,0.7);*/ }
+  body #content {
+    min-height: 500px;
+    width: 100%;
+    background-color: lightblue;
+    position: absolute;
+    top: 200px; }
 
 /*# sourceMappingURL=style.css.map */

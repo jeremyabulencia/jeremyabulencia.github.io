@@ -7,9 +7,32 @@
 	<title>Home - Jeremy Jordan J. Abulencia</title>
 </head>
 <body>
-	asd
+	<div id="tag">
+		<span>JEREMY JORDAN J. ABULENCIA</span>
+	</div>
+	<div id="head">
+		<div id="main-head">
+			jjnasd
+		</div>
+	</div>
+	<div id="content">
+		<div class="hex"></div>
+		
+	</div>
 </body>
 </html>
 <script>
-	console.log('sd');
+	$(document).ready(function(){
+		$(document).scroll(function(){
+			if($(this).scrollTop() <= 6){
+				$('#head').css({
+					'-webkit-filter': 'blur('+$(this).scrollTop()+'px)',
+					'-moz-filter': 'blur('+$(this).scrollTop()+'px)',
+					'-o-filter': 'blur('+$(this).scrollTop()+'px)',
+					'-ms-filter': 'blur('+$(this).scrollTop()+'px)',
+					'filter': 'blur('+$(this).scrollTop()+'px)',
+				})
+			}
+		})
+	})
 </script>
