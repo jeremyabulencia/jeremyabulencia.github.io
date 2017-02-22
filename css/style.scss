@@ -1,44 +1,7 @@
 
 $global-blue:navy;
-$primary-color:blue;
-$secondary-color:lightblue;
-$hexagon-background-color:transparent;
-.hexagon {
-  position: relative;
-  width: 300px; 
-  height: 173.21px;
-  background-color: $hexagon-background-color;
-  margin: 86.60px 0;
-}
-
-.hexagon:before,
-.hexagon:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  border-left: 150px solid transparent;
-  border-right: 150px solid transparent;
-}
-
-.hexagon:before {
-  bottom: 100%;
-  border-bottom: 86.60px solid $hexagon-background-color;
-}
-
-.hexagon:after {
-  top: 100%;
-  width: 0;
-  border-top: 86.60px solid $hexagon-background-color;
-}
-
-
-@mixin blur-effect($blurvar){
-	-webkit-filter: blur($blurvar);
-	-moz-filter: blur($blurvar);
-	-o-filter: blur($blurvar);
-	-ms-filter: blur($blurvar);
-	filter: blur($blurvar);
-}
+$primary-color:navy;
+$secondary-color:#F0F0F0;
 
 body{
 	padding: 0px;
@@ -62,15 +25,14 @@ body{
 		}
 	}
 	#head{
-		height: 200px;
 		width: 100%;
-		background-image:url('../images/corvette.jpg');
-		/*background-size:100% 400px;*/
 		background-color:$primary-color;
 		position:fixed;
 		top:0px;
-		
-		/*@include blur-effect(5px);*/
+
+		img{
+			width:100%;
+		}
 
 		#main-head{
 			/*width:100%;
@@ -83,10 +45,6 @@ body{
 		width:100%;
 		background-color:$secondary-color;
 		position:absolute;
-		top:200px;
-
-		.hex{
-			@extend .hexagon;
-		}
+		
 	}
 }
