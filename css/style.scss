@@ -1,7 +1,11 @@
 
 $global-blue:navy;
-$primary-color:navy;
+$primary-color:#000099;
 $secondary-color:#F0F0F0;
+
+.shadow{
+	box-shadow: 2px 2px 8px #888888;
+}
 
 body{
 	padding: 0px;
@@ -33,12 +37,6 @@ body{
 		img{
 			width:100%;
 		}
-
-		#main-head{
-			/*width:100%;
-			height:100%;
-			background-color:rgba(0,0,0,0.7);*/
-		}
 	}
 	#content{
 		min-height:500px;
@@ -49,8 +47,13 @@ body{
 		
 		.subContent{
 			width:80%;
-			border: 1px solid $primary-color;
-			margin:5px auto;
+			border-radius:2px;
+			min-height: 200px;
+			padding:10px;
+			margin:15px auto;
+			background-color:#FFFFFF;
+
+			@extend .shadow;
 		}
 	}
 }

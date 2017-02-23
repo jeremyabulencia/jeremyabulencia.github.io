@@ -21,7 +21,6 @@ $(document).ready(function(){
 
 	callbacks.fire(blurScroll($(document).scrollTop()));
 	$(document).scroll(function(){
-		console.log($(this).scrollTop())
 		callbacks.fire(blurScroll($(this).scrollTop()))
 	})
 
@@ -29,7 +28,6 @@ $(document).ready(function(){
 		callbacks.fire(adjustContentPosition());
 	})
 	$(window).resize(function(){
-		console.log($('#head').height())
 		callbacks.fire(adjustContentPosition())
 	})
 	
