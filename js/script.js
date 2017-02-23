@@ -1,4 +1,4 @@
-$(document).load(function(){
+$(document).ready(function(){
 	
 	callbacks = $.Callbacks();
 
@@ -25,7 +25,9 @@ $(document).load(function(){
 		callbacks.fire(blurScroll($(this).scrollTop()))
 	})
 
-	callbacks.fire(adjustContentPosition());
+	$('#head img').load(function(){
+		callbacks.fire(adjustContentPosition());
+	})
 	$(window).resize(function(){
 		console.log($('#head').height())
 		callbacks.fire(adjustContentPosition())
