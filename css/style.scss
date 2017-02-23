@@ -45,6 +45,12 @@ body{
 		width:100%;
 		background-color:$secondary-color;
 		position:absolute;
+		padding-top: 20px;
 		
+		.subContent{
+			width:80%;
+			border: 1px solid $primary-color;
+			margin:5px auto;
+		}
 	}
 }

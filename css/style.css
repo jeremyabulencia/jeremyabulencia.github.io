@@ -29,6 +29,11 @@ body {
     min-height: 500px;
     width: 100%;
     background-color: #F0F0F0;
-    position: absolute; }
+    position: absolute;
+    padding-top: 20px; }
+    body #content .subContent {
+      width: 80%;
+      border: 1px solid navy;
+      margin: 5px auto; }
 
 /*# sourceMappingURL=style.css.map */
