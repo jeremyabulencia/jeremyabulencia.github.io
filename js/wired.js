@@ -10,8 +10,12 @@ $(document).ready(function(){
 	var username = " ";
 	var users = {};
 
+	
+
 	userRef.on('child_added',function(snapshot){
-		users = snapshot.val()
+		userRef.on('value',function(snapshot){
+			users = snapshot.val();
+		})
 	})
 
 	userRef.on('child_changed',function(snapshot){
