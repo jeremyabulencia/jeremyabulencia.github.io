@@ -9,7 +9,10 @@
     #content #chat-form {
       font-size: 3.0vw !important; }
       #content #chat-form #chat-button {
-        /*margin-top:5px !important;*/ } }
+        /*margin-top:5px !important;*/ }
+
+  #login-form {
+    width: 95% !important; } }
 @media screen and (max-width: 696px) {
   #content #chat-log {
     font-size: 4.0vw !important; }
