@@ -101,7 +101,7 @@ $(document).ready(function(){
 					online:1,
 				})
 				thisUsername = $(this).val();
-				userRef.child($(this).val()).on('value',function(snapshot){
+				userRef.child(username).on('value',function(snapshot){
 					if(snapshot.val() != null){
 						username = thisUsername;
 						$('#login-container').hide();
