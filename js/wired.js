@@ -95,25 +95,29 @@ $(document).ready(function(){
 
 	$('#login-textbox').keypress(function(e){
 		if(e.which == 13){
-			if(isUnique($(this).val())){
-				userRef.child(username).set({
-					created_at:$.now(),
-					online:1,
-				})
-				thisUsername = $(this).val();
-				userRef.child(username).on('value',function(snapshot){
-					if(snapshot.val() != null){
-						username = thisUsername;
-						$('#login-container').hide();
-					}else{
-						$('#login-textbox').val('');
-						alert('Please try again.');
-					}
-				})
-			}else{
-				alert('Username already in use. Please try again.');
-				$(this).val('');
+			if($(this).val() != ''){
+				if(isUnique($(this).val())){
+					userRef.child(username).set({
+						created_at:$.now(),
+						online:1,
+					})
+					thisUsername = $(this).val();
+					userRef.child(username).on('value',function(snapshot){
+						if(snapshot.val() != null){
+							username = thisUsername;
+							$('#login-container').hide();
+						}else{
+							$('#login-textbox').val('');
+							alert('Please try again.');
+						}
+					})
+				}else{
+					alert('Username already in use. Please try again.');
+					$(this).val('');
 
+				}
+			}else{
+				alert('Please enter a username');
 			}
 		}
 	})
