@@ -2,14 +2,34 @@ $(document).ready(function(){
 	callbacks = $.Callbacks();
 
 	var rootRef = new Firebase("https://wired.firebaseio.com/");
-
+	var rootRef2 = new Firebase("https://wired.firebaseio.com/");
+	
+	var userRef = rootRef.child('users');
+	var messageRef = rootRef2.child('messages');
 
 	var username = " ";
-
 	var users = {};
 
-	rootRef.on('child_added',function(snapshot){
+	userRef.on('child_added',function(snapshot){
 		users = snapshot.val()
+	})
+
+	userRef.on('child_changed',function(snapshot){
+		userRef.on('value',function(snapshot2){
+			users = snapshot2.val();
+		})
+	})
+
+	messageRef.on('child_added',function(snapshot){
+		var layout = '<li><span id="usrLbl">[username]</span>: <span id="msgFld">[message]</span></li>';
+		var newInput = layout;
+
+		newInput = newInput.replace('[username]',snapshot.val().author);
+		newInput = newInput.replace('[message]',snapshot.val().content);
+		newInput = newInput.replace('<script>','');
+
+
+		$('#chat-messages').append(newInput);
 	})
 
 	adjustTextBox = function(){
@@ -18,14 +38,10 @@ $(document).ready(function(){
 	}
 
 	addChat = function(username, message){
-		var layout = '<li><span id="usrLbl">[username]</span>: <span id="msgFld">[message]</span></li>';
-		var newInput = layout;
-		
-		newInput = newInput.replace('[username]',username);
-		newInput = newInput.replace('[message]',message);
-		newInput = newInput.replace('<script>','');
-
-		$('#chat-messages').append(newInput);
+		messageRef.push({
+			content:message,
+			author:username
+		})
 
 	}
 
@@ -34,20 +50,10 @@ $(document).ready(function(){
 	}
 
 	disconnect = function(){
-		rootRef.child('users/'+username).set({
+		userRef.child('users/'+username).set({
 			created_at:$.now(),
 			online:0,
 		})
-	}
-
-	function isUnique(txt){
-		var isAvailable = true;
-		$.each(users,function(index,value){
-			if(index == txt && value.online == 1){
-				isAvailable = false;
-			}
-		})
-		return isAvailable;
 	}
 
 	callbacks.fire(adjustTextBox());
@@ -74,15 +80,28 @@ $(document).ready(function(){
 		}
 	})
 
+	// ======================================= LOGIN MODULE =========================================
+
+	function isUnique(txt){
+		var isAvailable = true;
+		$.each(users,function(index,value){
+			if(index == txt && value.online == 1){
+				isAvailable = false;
+			}
+		})
+		username = txt;
+		return isAvailable;
+	}
+
 	$('#login-textbox').keypress(function(e){
 		if(e.which == 13){
 			if(isUnique($(this).val())){
-				rootRef.child('users/'+$(this).val()).set({
+				userRef.child(username).set({
 					created_at:$.now(),
 					online:1,
 				})
 				thisUsername = $(this).val();
-				rootRef.child('users').child($(this).val()).on('value',function(snapshot){
+				userRef.child($(this).val()).on('value',function(snapshot){
 					if(snapshot.val() != null){
 						username = thisUsername;
 						$('#login-container').hide();
