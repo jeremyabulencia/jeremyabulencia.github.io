@@ -50,10 +50,12 @@ $(document).ready(function(){
 	}
 
 	disconnect = function(){
-		userRef.child('users/'+username).set({
-			created_at:$.now(),
-			online:0,
-		})
+		if(username != " "){
+			userRef.child(username).set({
+				created_at:$.now(),
+				online:0,
+			})
+		}
 	}
 
 	callbacks.fire(adjustTextBox());
@@ -89,28 +91,24 @@ $(document).ready(function(){
 				isAvailable = false;
 			}
 		})
-		username = txt;
-		return isAvailable;
+		if(isAvailable == true){
+			username = txt;
+			if(username != " "){
+				userRef.child(username).set({
+					created_at:$.now(),
+					online:1,
+				})
+				return isAvailable
+			}
+		}
 	}
 
 	$('#login-textbox').keypress(function(e){
 		if(e.which == 13){
-			if($(this).val() != ''){
+			if($(this).val() != " "){
 				if(isUnique($(this).val())){
-					userRef.child(username).set({
-						created_at:$.now(),
-						online:1,
-					})
-					thisUsername = $(this).val();
-					userRef.child(username).on('value',function(snapshot){
-						if(snapshot.val() != null){
-							username = thisUsername;
-							$('#login-container').hide();
-						}else{
-							$('#login-textbox').val('');
-							alert('Please try again.');
-						}
-					})
+					username = $(this).val();
+					$('#login-container').hide();
 				}else{
 					alert('Username already in use. Please try again.');
 					$(this).val('');
