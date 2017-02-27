@@ -7,6 +7,15 @@ $secondary-color:#F0F0F0;
 	box-shadow: 2px 2px 8px #888888;
 }
 
+@for $i from 1 through 100 {
+	$size:percentage($i/100);
+
+	.width-#{$i}{
+		width: $size !important;
+	}
+
+}
+
 body{
 	padding: 0px;
 	margin: 0px;
@@ -46,7 +55,7 @@ body{
 		padding-top: 20px;
 		
 		.subContent{
-			width:80%;
+			/*width:80%;*/
 			border-radius:2px;
 			min-height: 200px;
 			padding:10px;
@@ -54,6 +63,10 @@ body{
 			background-color:#FFFFFF;
 
 			@extend .shadow;
+
+			&#content-works{
+				background-color:$global-blue;
+			}
 		}
 	}
 }
