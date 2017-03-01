@@ -1,0 +1,25 @@
+#caruchu{
+	display:none;
+	position:absolute;
+	top:0px;
+	left:0px;
+	/*border:1px solid black;*/
+	width:100% !important;
+	margin:auto !important;
+	height:100% !important;
+	
+	#left{
+		position:absolute;
+		left:0px;
+		width:10% !important;
+		height:100%;
+		top:45% !important;
+	}
+	#right{
+		position:absolute;
+		width:10% !important;
+		right:0px;
+		height:100%;
+		top:45% !important;
+	}
+}

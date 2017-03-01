@@ -19,6 +19,12 @@ $(document).ready(function(){
 		$('#content').css({'top':$('#head').height() - 20})
 	}
 
+	adjustContentWorks = function(){
+		contentWorksWidth = $('#content-works').closest('.subContent').outerWidth();
+		$('#content-works ul li').width(contentWorksWidth);
+		$('#content-works ul li:not(.active)').css({'margin-left':contentWorksWidth+'px'});
+	}
+
 	callbacks.fire(blurScroll($(document).scrollTop()));
 	$(document).scroll(function(){
 		callbacks.fire(blurScroll($(this).scrollTop()))
@@ -27,8 +33,17 @@ $(document).ready(function(){
 	$('#head img').load(function(){
 		callbacks.fire(adjustContentPosition());
 	})
+
+	callbacks.fire(adjustContentWorks())
 	$(window).resize(function(){
 		callbacks.fire(adjustContentPosition())
+		callbacks.fire(adjustContentWorks())
 	})
 	
+	$('#content-works ul li').on('click',function(){
+		window.location.href = $(this).data('href');
+	})
+
+
+	$('#content-works').carousel();
 })
