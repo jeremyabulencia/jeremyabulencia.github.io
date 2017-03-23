@@ -19,11 +19,14 @@
        	})
 
  		$(this).find('#right').on('click',function(){
- 			animation = {
+      animation = {
  				'margin-left':'-='+containerWidth,
  			}
  			currentDiv = main.find('.active');
  			nextDiv = currentDiv.next();
+      if(!nextDiv.html()){
+        return false;
+      }
  			currentDiv.removeClass('active').animate(animation);
  			nextDiv.addClass('active').animate(animation);
  		})
@@ -34,6 +37,9 @@
  			}
  			currentDiv = main.find('.active');
  			previousDiv = currentDiv.prev();
+      if(!previousDiv.html()){
+        return false;
+      }
  			currentDiv.removeClass('active').animate(animation);
  			previousDiv.addClass('active').animate(animation);
  		})

@@ -315,17 +315,23 @@
     left: 0px;
     height: 100%;
     width: 10%;
-    /*top:45% !important;*/
+    line-height: 130px !important;
     z-index: 999;
-    text-align: center; }
+    text-align: center;
+    background-color: rgba(230, 230, 230, 0.8); }
+    #caruchu #left:hover {
+      cursor: pointer; }
   #caruchu #right {
     position: absolute;
     right: 0px;
     height: 100%;
     width: 10%;
-    /*top:45% !important;*/
+    line-height: 130px !important;
     z-index: 999;
-    text-align: center; }
+    text-align: center;
+    background-color: rgba(230, 230, 230, 0.8); }
+    #caruchu #right:hover {
+      cursor: pointer; }
 
 @media screen and (max-width: 1137px) {
   #content .subContent#content-works ul li .container .title-display {
