@@ -69,6 +69,32 @@ $secondary-color:#F0F0F0;
 					}
 				}
 			}
+			&#content-careers{
+				ul{
+					width:95% !important;
+					margin:auto !important;
+					li{
+						width:100% !important;
+						#career-title{
+							width:100% !important;
+							float:none !important;
+							margin:3px 0px !important;
+							
+							.company-name{
+								font-size: 4.0vw !important;
+							}
+						}
+
+						#career-description{
+							width:100% !important;
+							float:none !important;
+							margin:3px 0px !important;
+
+							font-size: 1.8vw !important;
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -83,6 +109,32 @@ $secondary-color:#F0F0F0;
 							.title-display{
 								font-size: 3.5vw;
 							}
+						}
+					}
+				}
+			}
+			&#content-careers{
+				ul{
+					width:95% !important;
+					margin:auto !important;
+					li{
+						width:100% !important;
+						#career-title{
+							width:100% !important;
+							float:none !important;
+							margin:3px 0px !important;
+							
+							.company-name{
+								font-size: 5.0vw !important;
+							}
+						}
+
+						#career-description{
+							width:100% !important;
+							float:none !important;
+							margin:3px 0px !important;
+
+							font-size: 2.8vw !important;
 						}
 					}
 				}
@@ -179,6 +231,41 @@ body{
 								right:15px;
 								font-size: 4.0vw;
 							}
+						}
+					}
+				}
+			}
+
+			&#content-careers{
+				ul{
+					list-style: none;
+					width:80%;
+					margin:auto;
+					padding:0px;
+
+					li{
+						display:inline-block;
+						width:100%;
+						border-bottom:1px solid #cccccc;
+						margin:5px 0px;
+						padding:5px 0px;
+
+						#career-title{
+							width:25%;
+							float:left;
+							display:inline-block;
+
+							.company-name{
+								font-size: 2.5vw;
+							}
+						}
+
+						#career-description{
+							width:70%;
+							float:right;
+							display:inline-block;
+
+							font-size: 0.9vw;
 						}
 					}
 				}

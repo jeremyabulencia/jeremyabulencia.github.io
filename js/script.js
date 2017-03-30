@@ -16,7 +16,7 @@ $(document).ready(function(){
 	}
 
 	adjustContentPosition = function(){
-		$('#content').css({'top':$('#head').height() - 20})
+		$('#content').css({'top':$('#head').height() - 20});
 	}
 
 	adjustContentWorks = function(){
@@ -27,23 +27,23 @@ $(document).ready(function(){
 
 	callbacks.fire(blurScroll($(document).scrollTop()));
 	$(document).scroll(function(){
-		callbacks.fire(blurScroll($(this).scrollTop()))
-	})
+		callbacks.fire(blurScroll($(this).scrollTop()));
+	});
 
 	$('#head img').load(function(){
 		callbacks.fire(adjustContentPosition());
-	})
+	});
 
-	callbacks.fire(adjustContentWorks())
+	callbacks.fire(adjustContentWorks());
 	$(window).resize(function(){
-		callbacks.fire(adjustContentPosition())
-		callbacks.fire(adjustContentWorks())
-	})
+		callbacks.fire(adjustContentPosition());
+		callbacks.fire(adjustContentWorks());
+	});
 	
 	$('#content-works ul li').on('click',function(){
 		window.location.href = $(this).data('href');
-	})
+	});
 
 
 	$('#content-works').carousel();
-})
+});
