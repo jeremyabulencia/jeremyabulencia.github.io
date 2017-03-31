@@ -349,6 +349,8 @@
         margin: 3px 0px !important; }
         #content .subContent#content-careers ul li #career-title .company-name {
           font-size: 4.0vw !important; }
+        #content .subContent#content-careers ul li #career-title .company-timeline {
+          font-size: 2.0vw !important; }
       #content .subContent#content-careers ul li #career-description {
         width: 100% !important;
         float: none !important;
@@ -370,11 +372,13 @@
         margin: 3px 0px !important; }
         #content .subContent#content-careers ul li #career-title .company-name {
           font-size: 5.0vw !important; }
+        #content .subContent#content-careers ul li #career-title .company-timeline {
+          font-size: 3.0vw !important; }
       #content .subContent#content-careers ul li #career-description {
         width: 100% !important;
         float: none !important;
         margin: 3px 0px !important;
-        font-size: 2.8vw !important; } }
+        font-size: 2.9vw !important; } }
 body {
   padding: 0px;
   margin: 0px; }
@@ -398,6 +402,22 @@ body {
     top: 0px; }
     body #head img {
       width: 100%; }
+    body #head #main-head {
+      position: absolute;
+      top: 0px;
+      width: 100% !important;
+      height: 100% !important; }
+      body #head #main-head #name-tag {
+        background-color: rgba(230, 230, 230, 0.3);
+        width: 50%;
+        border: 1px solid white;
+        text-align: center;
+        color: #F0F0F0;
+        margin: auto;
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        font-size: 3.0vw; }
   body #content {
     min-height: 500px;
     width: 100%;
@@ -459,10 +479,13 @@ body {
             display: inline-block; }
             body #content .subContent#content-careers ul li #career-title .company-name {
               font-size: 2.5vw; }
+            body #content .subContent#content-careers ul li #career-title .company-timeline {
+              font-size: 1.3vw;
+              color: #CCCCCC; }
           body #content .subContent#content-careers ul li #career-description {
             width: 70%;
             float: right;
             display: inline-block;
-            font-size: 0.9vw; }
+            font-size: 1.0vw; }
 
 /*# sourceMappingURL=style.css.map */
