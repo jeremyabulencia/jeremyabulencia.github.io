@@ -334,8 +334,10 @@
       cursor: pointer; }
 
 @media screen and (max-width: 1137px) {
-  #content .subContent#content-works ul li .container .title-display {
-    font-size: 4.0vw !important; }
+  #content .subContent#content-works {
+    width: 80% !important; }
+    #content .subContent#content-works ul li .container .title-display {
+      font-size: 4.0vw !important; }
   #content .subContent#content-careers ul {
     width: 95% !important;
     margin: auto !important; }
@@ -353,8 +355,10 @@
         margin: 3px 0px !important;
         font-size: 1.8vw !important; } }
 @media screen and (max-width: 696px) {
-  #content .subContent#content-works ul li .container .title-display {
-    font-size: 3.5vw; }
+  #content .subContent#content-works {
+    width: 85% !important; }
+    #content .subContent#content-works ul li .container .title-display {
+      font-size: 3.5vw; }
   #content .subContent#content-careers ul {
     width: 95% !important;
     margin: auto !important; }
@@ -399,19 +403,19 @@ body {
     width: 100%;
     background-color: #F0F0F0;
     position: absolute;
-    padding-top: 20px;
-    display: block; }
+    padding-top: 20px; }
     body #content .subContent {
       /*width:80%;*/
       border-radius: 2px;
-      height: 130px;
       padding: 10px;
       margin: 15px auto;
       background-color: #FFFFFF; }
       body #content .subContent#content-works {
         background-color: steelblue;
         position: relative;
-        overflow: hidden !important; }
+        overflow: hidden !important;
+        height: 130px;
+        width: 35%; }
         body #content .subContent#content-works ul {
           list-style: none;
           padding: 0px !important;
@@ -444,7 +448,7 @@ body {
         margin: auto;
         padding: 0px; }
         body #content .subContent#content-careers ul li {
-          display: inline-block;
+          display: inline-block !important;
           width: 100%;
           border-bottom: 1px solid #cccccc;
           margin: 5px 0px;

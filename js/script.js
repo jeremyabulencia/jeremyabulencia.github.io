@@ -30,6 +30,7 @@ $(document).ready(function(){
 		callbacks.fire(blurScroll($(this).scrollTop()));
 	});
 
+	callbacks.fire(adjustContentPosition());
 	$('#head img').load(function(){
 		callbacks.fire(adjustContentPosition());
 	});

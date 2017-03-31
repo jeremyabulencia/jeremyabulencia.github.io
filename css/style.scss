@@ -59,6 +59,7 @@ $secondary-color:#F0F0F0;
 	#content{
 		.subContent{
 			&#content-works{
+				width:80% !important;
 				ul{
 					li{
 						.container{
@@ -103,6 +104,7 @@ $secondary-color:#F0F0F0;
 	#content{
 		.subContent{
 			&#content-works{
+				width:85% !important;
 				ul{
 					li{
 						.container{
@@ -180,12 +182,10 @@ body{
 		background-color:$secondary-color;
 		position:absolute;
 		padding-top: 20px;
-		display:block;
 		
 		.subContent{
 			/*width:80%;*/
 			border-radius:2px;
-			height: 130px;
 			padding:10px;
 			margin:15px auto;
 			background-color:#FFFFFF;
@@ -196,6 +196,8 @@ body{
 				background-color:steelblue;
 				position:relative;
 				overflow: hidden !important;
+				height: 130px;
+				width:35%;
 
 				ul{
 					list-style: none;
@@ -244,7 +246,7 @@ body{
 					padding:0px;
 
 					li{
-						display:inline-block;
+						display:inline-block !important;
 						width:100%;
 						border-bottom:1px solid #cccccc;
 						margin:5px 0px;
