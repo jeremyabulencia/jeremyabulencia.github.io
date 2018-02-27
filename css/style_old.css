@@ -1,0 +1,491 @@
+.width-1 {
+  width: 1%; }
+
+.width-2 {
+  width: 2%; }
+
+.width-3 {
+  width: 3%; }
+
+.width-4 {
+  width: 4%; }
+
+.width-5 {
+  width: 5%; }
+
+.width-6 {
+  width: 6%; }
+
+.width-7 {
+  width: 7%; }
+
+.width-8 {
+  width: 8%; }
+
+.width-9 {
+  width: 9%; }
+
+.width-10 {
+  width: 10%; }
+
+.width-11 {
+  width: 11%; }
+
+.width-12 {
+  width: 12%; }
+
+.width-13 {
+  width: 13%; }
+
+.width-14 {
+  width: 14%; }
+
+.width-15 {
+  width: 15%; }
+
+.width-16 {
+  width: 16%; }
+
+.width-17 {
+  width: 17%; }
+
+.width-18 {
+  width: 18%; }
+
+.width-19 {
+  width: 19%; }
+
+.width-20 {
+  width: 20%; }
+
+.width-21 {
+  width: 21%; }
+
+.width-22 {
+  width: 22%; }
+
+.width-23 {
+  width: 23%; }
+
+.width-24 {
+  width: 24%; }
+
+.width-25 {
+  width: 25%; }
+
+.width-26 {
+  width: 26%; }
+
+.width-27 {
+  width: 27%; }
+
+.width-28 {
+  width: 28%; }
+
+.width-29 {
+  width: 29%; }
+
+.width-30 {
+  width: 30%; }
+
+.width-31 {
+  width: 31%; }
+
+.width-32 {
+  width: 32%; }
+
+.width-33 {
+  width: 33%; }
+
+.width-34 {
+  width: 34%; }
+
+.width-35 {
+  width: 35%; }
+
+.width-36 {
+  width: 36%; }
+
+.width-37 {
+  width: 37%; }
+
+.width-38 {
+  width: 38%; }
+
+.width-39 {
+  width: 39%; }
+
+.width-40 {
+  width: 40%; }
+
+.width-41 {
+  width: 41%; }
+
+.width-42 {
+  width: 42%; }
+
+.width-43 {
+  width: 43%; }
+
+.width-44 {
+  width: 44%; }
+
+.width-45 {
+  width: 45%; }
+
+.width-46 {
+  width: 46%; }
+
+.width-47 {
+  width: 47%; }
+
+.width-48 {
+  width: 48%; }
+
+.width-49 {
+  width: 49%; }
+
+.width-50 {
+  width: 50%; }
+
+.width-51 {
+  width: 51%; }
+
+.width-52 {
+  width: 52%; }
+
+.width-53 {
+  width: 53%; }
+
+.width-54 {
+  width: 54%; }
+
+.width-55 {
+  width: 55%; }
+
+.width-56 {
+  width: 56%; }
+
+.width-57 {
+  width: 57%; }
+
+.width-58 {
+  width: 58%; }
+
+.width-59 {
+  width: 59%; }
+
+.width-60 {
+  width: 60%; }
+
+.width-61 {
+  width: 61%; }
+
+.width-62 {
+  width: 62%; }
+
+.width-63 {
+  width: 63%; }
+
+.width-64 {
+  width: 64%; }
+
+.width-65 {
+  width: 65%; }
+
+.width-66 {
+  width: 66%; }
+
+.width-67 {
+  width: 67%; }
+
+.width-68 {
+  width: 68%; }
+
+.width-69 {
+  width: 69%; }
+
+.width-70 {
+  width: 70%; }
+
+.width-71 {
+  width: 71%; }
+
+.width-72 {
+  width: 72%; }
+
+.width-73 {
+  width: 73%; }
+
+.width-74 {
+  width: 74%; }
+
+.width-75 {
+  width: 75%; }
+
+.width-76 {
+  width: 76%; }
+
+.width-77 {
+  width: 77%; }
+
+.width-78 {
+  width: 78%; }
+
+.width-79 {
+  width: 79%; }
+
+.width-80 {
+  width: 80%; }
+
+.width-81 {
+  width: 81%; }
+
+.width-82 {
+  width: 82%; }
+
+.width-83 {
+  width: 83%; }
+
+.width-84 {
+  width: 84%; }
+
+.width-85 {
+  width: 85%; }
+
+.width-86 {
+  width: 86%; }
+
+.width-87 {
+  width: 87%; }
+
+.width-88 {
+  width: 88%; }
+
+.width-89 {
+  width: 89%; }
+
+.width-90 {
+  width: 90%; }
+
+.width-91 {
+  width: 91%; }
+
+.width-92 {
+  width: 92%; }
+
+.width-93 {
+  width: 93%; }
+
+.width-94 {
+  width: 94%; }
+
+.width-95 {
+  width: 95%; }
+
+.width-96 {
+  width: 96%; }
+
+.width-97 {
+  width: 97%; }
+
+.width-98 {
+  width: 98%; }
+
+.width-99 {
+  width: 99%; }
+
+.width-100 {
+  width: 100%; }
+
+.shadow, body #content .subContent {
+  box-shadow: 2px 2px 8px #888888; }
+
+#caruchu {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  /*border:1px solid black;*/
+  width: 100% !important;
+  margin: auto !important;
+  height: 100% !important; }
+  #caruchu #left {
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    width: 10%;
+    line-height: 130px !important;
+    z-index: 999;
+    text-align: center;
+    background-color: rgba(230, 230, 230, 0.8); }
+    #caruchu #left:hover {
+      cursor: pointer; }
+  #caruchu #right {
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    width: 10%;
+    line-height: 130px !important;
+    z-index: 999;
+    text-align: center;
+    background-color: rgba(230, 230, 230, 0.8); }
+    #caruchu #right:hover {
+      cursor: pointer; }
+
+@media screen and (max-width: 1137px) {
+  #content .subContent#content-works {
+    width: 80% !important; }
+    #content .subContent#content-works ul li .container .title-display {
+      font-size: 4.0vw !important; }
+  #content .subContent#content-careers ul {
+    width: 95% !important;
+    margin: auto !important; }
+    #content .subContent#content-careers ul li {
+      width: 100% !important; }
+      #content .subContent#content-careers ul li #career-title {
+        width: 100% !important;
+        float: none !important;
+        margin: 3px 0px !important; }
+        #content .subContent#content-careers ul li #career-title .company-name {
+          font-size: 4.0vw !important; }
+        #content .subContent#content-careers ul li #career-title .company-timeline {
+          font-size: 2.0vw !important; }
+      #content .subContent#content-careers ul li #career-description {
+        width: 100% !important;
+        float: none !important;
+        margin: 3px 0px !important;
+        font-size: 1.8vw !important; } }
+@media screen and (max-width: 696px) {
+  #content .subContent#content-works {
+    width: 85% !important; }
+    #content .subContent#content-works ul li .container .title-display {
+      font-size: 3.5vw; }
+  #content .subContent#content-careers ul {
+    width: 95% !important;
+    margin: auto !important; }
+    #content .subContent#content-careers ul li {
+      width: 100% !important; }
+      #content .subContent#content-careers ul li #career-title {
+        width: 100% !important;
+        float: none !important;
+        margin: 3px 0px !important; }
+        #content .subContent#content-careers ul li #career-title .company-name {
+          font-size: 5.0vw !important; }
+        #content .subContent#content-careers ul li #career-title .company-timeline {
+          font-size: 3.0vw !important; }
+      #content .subContent#content-careers ul li #career-description {
+        width: 100% !important;
+        float: none !important;
+        margin: 3px 0px !important;
+        font-size: 2.9vw !important; } }
+body {
+  padding: 0px;
+  margin: 0px; }
+  body #tag {
+    display: none;
+    position: fixed;
+    top: 0px;
+    height: 20px;
+    width: 100%;
+    background-color: navy;
+    padding: 10px 0px;
+    z-index: 99999;
+    text-align: right; }
+    body #tag span {
+      margin: 10px;
+      color: #F0F0F0; }
+  body #head {
+    width: 100%;
+    background-color: #000099;
+    position: fixed;
+    top: 0px; }
+    body #head img {
+      width: 100%; }
+    body #head #main-head {
+      position: absolute;
+      top: 0px;
+      width: 100% !important;
+      height: 100% !important; }
+      body #head #main-head #name-tag {
+        background-color: rgba(230, 230, 230, 0.3);
+        width: 50%;
+        border: 1px solid white;
+        text-align: center;
+        color: #F0F0F0;
+        margin: auto;
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        font-size: 3.0vw; }
+  body #content {
+    min-height: 500px;
+    width: 100%;
+    background-color: #F0F0F0;
+    position: absolute;
+    padding-top: 20px; }
+    body #content .subContent {
+      /*width:80%;*/
+      border-radius: 2px;
+      padding: 10px;
+      margin: 15px auto;
+      background-color: #FFFFFF; }
+      body #content .subContent#content-works {
+        background-color: steelblue;
+        position: relative;
+        overflow: hidden !important;
+        height: 130px;
+        width: 35%; }
+        body #content .subContent#content-works ul {
+          list-style: none;
+          padding: 0px !important;
+          width: 100% !important;
+          margin: auto !important;
+          cursor: pointer; }
+          body #content .subContent#content-works ul li {
+            /*float:left;*/
+            display: block !important;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            height: 100% !important;
+            /*border:1px solid black;*/ }
+            body #content .subContent#content-works ul li.active {
+              left: 0px !important; }
+            body #content .subContent#content-works ul li#wired {
+              color: #CCCCCC !important; }
+            body #content .subContent#content-works ul li .container {
+              position: relative;
+              height: 99% !important; }
+              body #content .subContent#content-works ul li .container .title-display {
+                position: absolute;
+                bottom: 5px;
+                right: 15px;
+                font-size: 4.0vw; }
+      body #content .subContent#content-careers ul {
+        list-style: none;
+        width: 80%;
+        margin: auto;
+        padding: 0px; }
+        body #content .subContent#content-careers ul li {
+          display: inline-block !important;
+          width: 100%;
+          border-bottom: 1px solid #cccccc;
+          margin: 5px 0px;
+          padding: 5px 0px; }
+          body #content .subContent#content-careers ul li #career-title {
+            width: 25%;
+            float: left;
+            display: inline-block; }
+            body #content .subContent#content-careers ul li #career-title .company-name {
+              font-size: 2.5vw; }
+            body #content .subContent#content-careers ul li #career-title .company-timeline {
+              font-size: 1.3vw;
+              color: #CCCCCC; }
+          body #content .subContent#content-careers ul li #career-description {
+            width: 70%;
+            float: right;
+            display: inline-block;
+            font-size: 1.0vw; }
+
+/*# sourceMappingURL=style.css.map */

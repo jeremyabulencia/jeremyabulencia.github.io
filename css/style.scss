@@ -1,308 +1,135 @@
+$front_index : 1 !important;
+$mid_index : 0 !important;
+$back_index : -1 !important;
 
-$global-blue:navy;
-$primary-color:#000099;
-$secondary-color:#F0F0F0;
-
-@for $i from 1 through 100 {
-	$size:percentage($i/100);
-
-	.width-#{$i}{
-		width: $size;
-	}
-}
-
-.shadow{
-	box-shadow: 2px 2px 8px #888888;
-}
-
-#caruchu{
-	display:none;
-	position:absolute;
-	top:0px;
-	left:0px;
-	/*border:1px solid black;*/
+.long{
 	width:100% !important;
-	margin:auto !important;
+}
+.medium{
+	width:80% !important;
+}
+.short{
+	width:60% !important
+}
+
+.mask{
+	width:100% !important;
 	height:100% !important;
-	
-	#left{
-		position:absolute;
-		left:0px;
-		height:100%;
-		width:10%;
-		line-height:130px !important;
-		z-index:999;
-		text-align:center;
-		background-color:rgba(230,230,230,0.8);
-
-		&:hover{
-			cursor:pointer;
-		}
-	}
-	#right{
-		position:absolute;
-		right:0px;
-		height:100%;
-		width:10%;
-		line-height:130px !important;
-		z-index:999;
-		text-align:center;
-		background-color:rgba(230,230,230,0.8);
-
-		&:hover{
-			cursor:pointer;
-		}
-	}
+	background-color:rgba(0.8, 0.8, 0.8, 0.8);
+	position:absolute;
+	top:0;
+	z-index:$mid_index;
 }
 
-@media screen and (max-width:1137px) {
-	#content{
-		.subContent{
-			&#content-works{
-				width:80% !important;
-				ul{
-					li{
-						.container{
-							.title-display{
-								font-size: 4.0vw !important;
-							}
-						}
-					}
-				}
-			}
-			&#content-careers{
-				ul{
-					width:95% !important;
-					margin:auto !important;
-					li{
-						width:100% !important;
-						#career-title{
-							width:100% !important;
-							float:none !important;
-							margin:3px 0px !important;
-							
-							.company-name{
-								font-size: 4.0vw !important;
-							}
-
-							.company-timeline{
-								font-size: 2.0vw !important;
-							}
-						}
-
-						#career-description{
-							width:100% !important;
-							float:none !important;
-							margin:3px 0px !important;
-
-							font-size: 1.8vw !important;
-						}
-					}
-				}
-			}
-		}
-	}
+.row{
+	@extend .long;
 }
-
-@media screen and (max-width:696px){
-	#content{
-		.subContent{
-			&#content-works{
-				width:85% !important;
-				ul{
-					li{
-						.container{
-							.title-display{
-								font-size: 3.5vw;
-							}
-						}
-					}
-				}
-			}
-			&#content-careers{
-				ul{
-					width:95% !important;
-					margin:auto !important;
-					li{
-						width:100% !important;
-						#career-title{
-							width:100% !important;
-							float:none !important;
-							margin:3px 0px !important;
-							
-							.company-name{
-								font-size: 5.0vw !important;
-							}
-							
-							.company-timeline{
-								font-size: 3.0vw !important;
-							}
-						}
-
-						#career-description{
-							width:100% !important;
-							float:none !important;
-							margin:3px 0px !important;
-
-							font-size: 2.9vw !important;
-						}
-					}
-				}
-			}
-		}
-	}	
+.container{
+	position:relative;
+	height:100% !important;
 }
 
 body{
-	padding: 0px;
-	margin: 0px;
-	
-	#tag{
-		display:none;
-		position: fixed;
-		top:0px;
+	padding:0px;
+	margin:0px;
 
-		height:20px;
-		width:100%;
-		background-color:$global-blue;
-		padding:10px 0px;
-		z-index: 99999;
-		text-align: right;
-			
-		span{
-			margin:10px;	
-			color:#F0F0F0;
-		}
-	}
-	#head{
-		width: 100%;
-		background-color:$primary-color;
-		position:fixed;
-		top:0px;
+	.cabinet{
+		@extent .long;
 
-		img{
-			width:100%;
-		}
+		/* ===================== header ========================= */
+		#header{
+			/*display:none;*/
+			@extend .row;
+			background-color:#ccc;
 
-		#main-head{
-			position:absolute;
-			top:0px;
-			width:100% !important;
-			height:100% !important;
+			.content{
+				color:#fff;
+				height: 100% !important;
+				
+				.wrap-subcontent{
+					display:block;
+					width:100%;
+					margin:auto;
+					margin-top:5px;
 
-			#name-tag{
-				background-color: rgba(230,230,230,0.3);
-				width:50%;
-				border:1px solid white;
-				text-align: center;
-				color:$secondary-color;
-				margin:auto;
-				position:absolute;
-				top:30%;
-				left:25%;
-				font-size: 3.0vw;
-			}
-		}
-	}
-	#content{
-		min-height:500px;
-		width:100%;
-		background-color:$secondary-color;
-		position:absolute;
-		padding-top: 20px;
-		
-		.subContent{
-			/*width:80%;*/
-			border-radius:2px;
-			padding:10px;
-			margin:15px auto;
-			background-color:#FFFFFF;
-
-			@extend .shadow;
-
-			&#content-works{
-				background-color:steelblue;
-				position:relative;
-				overflow: hidden !important;
-				height: 130px;
-				width:35%;
-
-				ul{
-					list-style: none;
-					padding:0px !important;
-					width:100% !important;
-					margin:auto !important;
-					cursor:pointer;
-					
-					li{
-						/*float:left;*/
-						display:block !important;
-						width:100%;
+					.subcontent{
 						position:absolute;
-						top:0px;
-						height:100% !important;
-						/*border:1px solid black;*/
+						top:50%;
+						text-align:center;
+						width:100%;
 
-						&.active{
-							left:0px !important;
-						}
-						
-						&#wired{
-							color:#CCCCCC !important;
-						}
+						.title-wrap{
+							width:80% !important;
+							margin:auto;
 
-						.container{
-							position:relative;
-							height:99% !important;
-							
-							.title-display{
-								position:absolute;
-								bottom:5px;
-								right:15px;
-								font-size: 4.0vw;
+							.title{
+								display:inline-block;
+								border:1px solid #F0F0F0;
+								padding:10px;
+								font-size:42pt;
 							}
-						}
+							p{
+								font-size:26pt;
+							}
+						}	
 					}
 				}
 			}
+		}
 
-			&#content-careers{
-				ul{
-					list-style: none;
+		/* ===================== profile ========================= */
+		#profile{
+			@extend .row;
+			background-color:#C0C0C0;
+			padding:10px 0px;
+
+			.content{
+				@extend .medium;
+				margin:auto;
+
+				text-align:center;
+
+				.title{
+					font-size:36pt;
+				}
+
+				.wrap-subcontent{
+					display:inline-block;
 					width:80%;
-					margin:auto;
-					padding:0px;
 
-					li{
-						display:inline-block !important;
-						width:100%;
-						border-bottom:1px solid #cccccc;
-						margin:5px 0px;
-						padding:5px 0px;
+					.left-subcontent{
+						float:left;
+						width:65%;
+						display:inline-block;
+						text-align:left;
 
-						#career-title{
-							width:25%;
-							float:left;
-							display:inline-block;
-
-							.company-name{
-								font-size: 2.5vw;
-							}
-
-							.company-timeline{
-								font-size: 1.3vw;
-								color:#CCCCCC;
-							}
-						}
-
-						#career-description{
-							width:70%;
+						img{
 							float:right;
-							display:inline-block;
-
-							font-size: 1.0vw;
+							border-radius:60%;
 						}
 					}
+					.right-subcontent{
+						float:right;
+						width:34%;
+					}
+				}
+			}
+		}
+
+		/* ===================== experience ========================= */
+		#experience{
+			@extend .row;
+			background-color:#F0F0F0;
+			padding:10px 0px;
+
+			.content{
+				@extend .medium;
+				margin:auto;
+
+				text-align:center;
+
+				.title{
+					font-size:36pt;
 				}
 			}
 		}
