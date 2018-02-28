@@ -79,8 +79,7 @@ body {
         body .cabinet #header .content .wrap-subcontent {
           display: block;
           width: 100%;
-          margin: auto;
-          margin-top: 5px; }
+          margin: auto; }
           body .cabinet #header .content .wrap-subcontent .subcontent {
             position: absolute;
             top: 50%;
