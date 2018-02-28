@@ -1,7 +1,7 @@
-.long, .row, body .cabinet #header, body .cabinet #profile, body .cabinet #experience {
+.long, .row, body .cabinet #header, body .cabinet #profile, body .cabinet #experience, body .cabinet #abilities, body .cabinet #footer {
   width: 100% !important; }
 
-.moderate, body .cabinet #profile .content, body .cabinet #experience .content {
+.moderate, body .cabinet #profile .content, body .cabinet #experience .content, body .cabinet #abilities .content, body .cabinet #footer .content {
   width: 80% !important; }
 
 .short {
@@ -22,6 +22,9 @@
 .xsmall {
   font-size: 18pt; }
 
+.xxsmall {
+  font-size: 14pt; }
+
 .align-left {
   text-align: left !important; }
 
@@ -30,6 +33,9 @@
 
 .align-right {
   text-align: right !important; }
+
+.hide {
+  display: none !important; }
 
 .mask {
   width: 100% !important;
@@ -56,10 +62,17 @@ body {
     @extent .long;
     /* ===================== header ========================= */
     /* ===================== profile ========================= */
-    /* ===================== experience ========================= */ }
+    /* ===================== experience ========================= */
+    /* ===================== footer ========================= */
+    /* ===================== footer ========================= */ }
     body .cabinet #header {
-      display: none;
-      background-color: #ccc; }
+      /*display:none;*/
+      background-color: #ccc;
+      background-image: url("../images/intro.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover; }
       body .cabinet #header .content {
         color: #fff;
         height: 100% !important; }
@@ -102,10 +115,22 @@ body {
           body .cabinet #profile .content .wrap-subcontent .right-subcontent {
             float: right;
             width: 34%; }
+            body .cabinet #profile .content .wrap-subcontent .right-subcontent .label {
+              color: #000099; }
     body .cabinet #experience {
       background-color: #F0F0F0;
       padding: 10px 0px; }
       body .cabinet #experience .content {
+        margin: auto;
+        text-align: center; }
+    body .cabinet #abilities {
+      background-color: #C0C0C0; }
+      body .cabinet #abilities .content {
+        margin: auto;
+        text-align: center; }
+    body .cabinet #footer {
+      background-color: #333333; }
+      body .cabinet #footer .content {
         margin: auto;
         text-align: center; }
 

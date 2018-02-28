@@ -27,7 +27,9 @@ $back_index : -1 !important;
 .xsmall{
 	font-size:18pt;
 }
-
+.xxsmall{
+	font-size:14pt;
+}
 .align-left{
 	text-align:left !important;
 }
@@ -36,6 +38,10 @@ $back_index : -1 !important;
 }
 .align-right{
 	text-align:right !important;
+}
+
+.hide{
+	display:none !important;
 }
 
 .mask{
@@ -71,9 +77,15 @@ body{
 
 		/* ===================== header ========================= */
 		#header{
-			display:none;
+			/*display:none;*/
 			@extend .row;
 			background-color:#ccc;
+
+			background-image:url('../images/intro.jpg');
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
 
 			.content{
 				color:#fff;
@@ -143,6 +155,10 @@ body{
 					.right-subcontent{
 						float:right;
 						width:34%;
+
+						.label{
+							color:#000099;
+						}
 					}
 				}
 			}
@@ -157,13 +173,44 @@ body{
 			.content{
 				@extend .moderate;
 				margin:auto;
-
 				text-align:center;
 
 				.title{
 					
 				}
 			}
+		}
+
+		/* ===================== footer ========================= */
+		#abilities{
+			@extend .row;
+			background-color:#C0C0C0;
+
+			.content{
+				@extend .moderate;
+				margin:auto;
+				text-align:center;
+
+				.title{
+
+				}
+			}
+		}
+
+		/* ===================== footer ========================= */
+		#footer{
+			@extend .row;
+			background-color:#333333;
+
+			.content{
+				@extend .moderate;
+				margin:auto;
+				text-align:center;
+
+				.title{
+
+				}
+			}	
 		}
 	}
 }
