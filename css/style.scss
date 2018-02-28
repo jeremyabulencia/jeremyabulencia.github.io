@@ -75,6 +75,11 @@ body{
 	.cabinet{
 		@extent .long;
 
+		.row:not(#header){
+			padding-top:15px;
+			padding-bottom:15px;
+		}
+
 		/* ===================== header ========================= */
 		#header{
 			/*display:none;*/
@@ -200,6 +205,7 @@ body{
 		#footer{
 			@extend .row;
 			background-color:#333333;
+			color:#A0A0A0;
 
 			.content{
 				@extend .moderate;
@@ -208,6 +214,29 @@ body{
 
 				.title{
 
+				}
+
+				hr{
+					border-color:#A0A0A0 !important;
+				}
+
+				.wrap-subcontent{
+					width:80%;
+					margin:auto;
+
+					ul{
+						margin:0px;
+						padding:0px;
+						width:100%;
+						display:block;
+
+						li{
+							margin:auto;
+							width:49%;
+							display:inline-block;
+							margin:5px 1px;
+						}
+					}
 				}
 			}	
 		}
