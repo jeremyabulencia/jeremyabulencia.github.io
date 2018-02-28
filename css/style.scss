@@ -5,11 +5,37 @@ $back_index : -1 !important;
 .long{
 	width:100% !important;
 }
-.medium{
+.moderate{
 	width:80% !important;
 }
 .short{
 	width:60% !important
+}
+
+.xlarge{
+	font-size:48pt;
+}
+.large{
+	font-size:42pt;
+}
+.medium{
+	font-size:32pt;
+}
+.small{
+	font-size:24pt;
+}
+.xsmall{
+	font-size:18pt;
+}
+
+.align-left{
+	text-align:left !important;
+}
+.align-center{
+	text-align:center !important;
+}
+.align-right{
+	text-align:right !important;
 }
 
 .mask{
@@ -28,7 +54,14 @@ $back_index : -1 !important;
 	position:relative;
 	height:100% !important;
 }
+ul{
+	list-style-type:none;
 
+	li{
+		display:block;
+		text-align:left !important;
+	}
+}
 body{
 	padding:0px;
 	margin:0px;
@@ -38,7 +71,7 @@ body{
 
 		/* ===================== header ========================= */
 		#header{
-			/*display:none;*/
+			display:none;
 			@extend .row;
 			background-color:#ccc;
 
@@ -84,13 +117,13 @@ body{
 			padding:10px 0px;
 
 			.content{
-				@extend .medium;
+				@extend .moderate;
 				margin:auto;
 
 				text-align:center;
 
 				.title{
-					font-size:36pt;
+
 				}
 
 				.wrap-subcontent{
@@ -101,7 +134,6 @@ body{
 						float:left;
 						width:65%;
 						display:inline-block;
-						text-align:left;
 
 						img{
 							float:right;
@@ -123,13 +155,13 @@ body{
 			padding:10px 0px;
 
 			.content{
-				@extend .medium;
+				@extend .moderate;
 				margin:auto;
 
 				text-align:center;
 
 				.title{
-					font-size:36pt;
+					
 				}
 			}
 		}

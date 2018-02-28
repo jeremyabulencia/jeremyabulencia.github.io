@@ -1,11 +1,35 @@
 .long, .row, body .cabinet #header, body .cabinet #profile, body .cabinet #experience {
   width: 100% !important; }
 
-.medium, body .cabinet #profile .content, body .cabinet #experience .content {
+.moderate, body .cabinet #profile .content, body .cabinet #experience .content {
   width: 80% !important; }
 
 .short {
   width: 60% !important; }
+
+.xlarge {
+  font-size: 48pt; }
+
+.large {
+  font-size: 42pt; }
+
+.medium {
+  font-size: 32pt; }
+
+.small {
+  font-size: 24pt; }
+
+.xsmall {
+  font-size: 18pt; }
+
+.align-left {
+  text-align: left !important; }
+
+.align-center {
+  text-align: center !important; }
+
+.align-right {
+  text-align: right !important; }
 
 .mask {
   width: 100% !important;
@@ -19,6 +43,12 @@
   position: relative;
   height: 100% !important; }
 
+ul {
+  list-style-type: none; }
+  ul li {
+    display: block;
+    text-align: left !important; }
+
 body {
   padding: 0px;
   margin: 0px; }
@@ -28,7 +58,7 @@ body {
     /* ===================== profile ========================= */
     /* ===================== experience ========================= */ }
     body .cabinet #header {
-      /*display:none;*/
+      display: none;
       background-color: #ccc; }
       body .cabinet #header .content {
         color: #fff;
@@ -59,16 +89,13 @@ body {
       body .cabinet #profile .content {
         margin: auto;
         text-align: center; }
-        body .cabinet #profile .content .title {
-          font-size: 36pt; }
         body .cabinet #profile .content .wrap-subcontent {
           display: inline-block;
           width: 80%; }
           body .cabinet #profile .content .wrap-subcontent .left-subcontent {
             float: left;
             width: 65%;
-            display: inline-block;
-            text-align: left; }
+            display: inline-block; }
             body .cabinet #profile .content .wrap-subcontent .left-subcontent img {
               float: right;
               border-radius: 60%; }
@@ -81,7 +108,5 @@ body {
       body .cabinet #experience .content {
         margin: auto;
         text-align: center; }
-        body .cabinet #experience .content .title {
-          font-size: 36pt; }
 
 /*# sourceMappingURL=style.css.map */
