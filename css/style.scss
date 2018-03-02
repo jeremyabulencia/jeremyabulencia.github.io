@@ -40,8 +40,17 @@ $back_index : -1 !important;
 	text-align:right !important;
 }
 
+.disabled{
+	color:grey !important;
+}
+
 .hide{
 	display:none !important;
+}
+
+.bar-top{
+	border-top:1px solid #A0A0A0;
+	padding-top:10px !important;
 }
 
 .mask{
@@ -182,6 +191,15 @@ body{
 				.title{
 					
 				}
+
+				hr{
+					border-color:#F0F0F0 !important;
+				}
+				
+				.wrap-subcontent{
+					width:80%;
+					margin:auto;
+				}
 			}
 		}
 
@@ -197,6 +215,15 @@ body{
 
 				.title{
 
+				}
+
+				hr{
+					border-color:#F0F0F0 !important;
+				}
+
+				.wrap-subcontent{
+					width:80%;
+					margin:auto;
 				}
 			}
 		}
@@ -227,7 +254,8 @@ body{
 					ul{
 						margin:0px;
 						padding:0px;
-						width:100%;
+						width:80%;
+						margin:auto;
 						display:block;
 
 						li{
@@ -235,6 +263,21 @@ body{
 							width:49%;
 							display:inline-block;
 							margin:5px 1px;
+
+							a{
+								color:#A0A0A0;
+								text-decoration:none;
+							}
+
+							/*
+							&:nth-child(odd){
+								border:1px solid black;
+								text-align:left !important;
+							}
+							&:nth-child(even){
+								border:1px solid green;
+								text-align:right !important;
+							}*/
 						}
 					}
 				}

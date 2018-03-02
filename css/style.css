@@ -34,8 +34,15 @@
 .align-right {
   text-align: right !important; }
 
+.disabled {
+  color: grey !important; }
+
 .hide {
   display: none !important; }
+
+.bar-top {
+  border-top: 1px solid #A0A0A0;
+  padding-top: 10px !important; }
 
 .mask {
   width: 100% !important;
@@ -125,11 +132,21 @@ body {
       body .cabinet #experience .content {
         margin: auto;
         text-align: center; }
+        body .cabinet #experience .content hr {
+          border-color: #F0F0F0 !important; }
+        body .cabinet #experience .content .wrap-subcontent {
+          width: 80%;
+          margin: auto; }
     body .cabinet #abilities {
       background-color: #C0C0C0; }
       body .cabinet #abilities .content {
         margin: auto;
         text-align: center; }
+        body .cabinet #abilities .content hr {
+          border-color: #F0F0F0 !important; }
+        body .cabinet #abilities .content .wrap-subcontent {
+          width: 80%;
+          margin: auto; }
     body .cabinet #footer {
       background-color: #333333;
       color: #A0A0A0; }
@@ -144,12 +161,25 @@ body {
           body .cabinet #footer .content .wrap-subcontent ul {
             margin: 0px;
             padding: 0px;
-            width: 100%;
+            width: 80%;
+            margin: auto;
             display: block; }
             body .cabinet #footer .content .wrap-subcontent ul li {
               margin: auto;
               width: 49%;
               display: inline-block;
-              margin: 5px 1px; }
+              margin: 5px 1px;
+              /*
+              &:nth-child(odd){
+              	border:1px solid black;
+              	text-align:left !important;
+              }
+              &:nth-child(even){
+              	border:1px solid green;
+              	text-align:right !important;
+              }*/ }
+              body .cabinet #footer .content .wrap-subcontent ul li a {
+                color: #A0A0A0;
+                text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
