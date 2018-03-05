@@ -6,10 +6,10 @@ $back_index : -1 !important;
 	width:100% !important;
 }
 .moderate{
-	width:80% !important;
+	width:80%;
 }
 .short{
-	width:60% !important
+	width:60%;
 }
 
 .xlarge{
@@ -77,6 +77,72 @@ ul{
 		text-align:left !important;
 	}
 }
+
+@media screen and (max-width:1137px) {
+	.xlarge{
+		font-size: 4.5vw !important;
+	}
+	.large{
+		font-size: 3.5vw !important;
+	}
+	.medium{
+		font-size: 2.8vw !important;
+	}
+	.small{
+		font-size: 2.3vw !important;
+	}
+	.xsmall{
+		font-size: 2.5vw !important;
+	}
+	.xxsmall{
+		font-size: 1.8vw !important;
+	}
+	.moderate{
+		width:90% !important;
+	}
+	.wrap-subcontent{
+		width:90% !important;
+	}
+	div, span, p{
+		width:100% !important;
+		float:none !important;
+	}
+	img{
+		display:block !important;
+		float:none !important;
+		margin:auto;
+	}
+	ul{
+		li{
+			display:block !important;
+		}
+	}
+}
+
+@media screen and (max-width:696px){
+	.xlarge{
+		font-size: 5.2vw !important;
+	}
+	.large{
+		font-size: 4.5vw !important;
+	}
+	.medium{
+		font-size: 4.0vw !important;
+	}
+	.small{
+		font-size: 3.75vw !important;
+	}
+	.xsmall{
+		font-size: 2.8vw !important;
+	}
+	.xxsmall{
+		font-size: 2.5vw !important;
+	}
+	.moderate{
+		width:95% !important;
+	}
+}
+
 body{
 	padding:0px;
 	margin:0px;
