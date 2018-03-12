@@ -48,6 +48,10 @@ $back_index : -1 !important;
 	display:none !important;
 }
 
+.mobileHidden{
+	display:block !important;
+}
+
 .bar-top{
 	border-top:1px solid #A0A0A0;
 	padding-top:10px !important;
@@ -125,6 +129,9 @@ ul{
 }
 
 @media screen and (max-width:696px){
+	.mobileHidden{
+		display:none !important;
+	}
 	.xlarge{
 		font-size: 5.8vw !important;
 	}

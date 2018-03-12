@@ -4,8 +4,12 @@ introSize = function(){
 	$('#header').css({'height':docHeight});
 }
 $(document).ready(function(){
-	callback.fire(introSize());
+	if($(window).width() > 696){
+		callback.fire(introSize());
+	}
 });
 $(window).resize(function(){
-	callback.fire(introSize());
+	if($(window).width() > 696){
+		callback.fire(introSize());
+	}
 })
