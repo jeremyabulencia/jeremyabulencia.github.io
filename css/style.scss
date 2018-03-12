@@ -113,33 +113,51 @@ ul{
 		margin:auto;
 	}
 	ul{
+		margin:0px;
+		padding:0px;
 		li{
 			display:block !important;
 		}
+	}
+	.wrap-subcontent{
+		width:90% !important;
 	}
 }
 
 @media screen and (max-width:696px){
 	.xlarge{
-		font-size: 5.5vw !important;
+		font-size: 5.8vw !important;
 	}
 	.large{
-		font-size: 5.0vw !important;
+		font-size: 5.2vw !important;
 	}
 	.medium{
-		font-size: 4.5vw !important;
+		font-size: 4.8vw !important;
 	}
 	.small{
-		font-size: 4.0vw !important;
+		font-size: 4.2vw !important;
 	}
 	.xsmall{
-		font-size: 3.5vw !important;
+		font-size: 3.8vw !important;
 	}
 	.xxsmall{
-		font-size: 3.0vw !important;
+		font-size: 3.2vw !important;
 	}
 	.moderate{
 		width:97% !important;
+	}
+	.wrap-subcontent{
+		width:90% !important;
+	}
+
+	#profile{
+		.left-subcontent, .right-subcontent{
+			width:100% !important;
+		}
+	}
+	ul{
+		margin:0px;
+		padding:0px;
 	}
 }
 
