@@ -16,19 +16,19 @@ $back_index : -1 !important;
 	font-size:48pt;
 }
 .large{
-	font-size:42pt;
+	font-size:36pt;
 }
 .medium{
-	font-size:32pt;
+	font-size:28pt;
 }
 .small{
-	font-size:24pt;
+	font-size:22pt;
 }
 .xsmall{
-	font-size:18pt;
+	font-size:16pt;
 }
 .xxsmall{
-	font-size:14pt;
+	font-size:12pt;
 }
 .align-left{
 	text-align:left !important;
@@ -80,22 +80,22 @@ ul{
 
 @media screen and (max-width:1137px) {
 	.xlarge{
-		font-size: 4.5vw !important;
+		font-size: 4.3vw !important;
 	}
 	.large{
-		font-size: 4.0vw !important;
-	}
-	.medium{
 		font-size: 3.5vw !important;
 	}
-	.small{
+	.medium{
 		font-size: 3.0vw !important;
 	}
-	.xsmall{
+	.small{
 		font-size: 2.5vw !important;
 	}
-	.xxsmall{
+	.xsmall{
 		font-size: 2.0vw !important;
+	}
+	.xxsmall{
+		font-size: 1.75vw !important;
 	}
 	.moderate{
 		width:90% !important;
