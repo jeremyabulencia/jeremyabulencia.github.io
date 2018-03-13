@@ -1,4 +1,4 @@
-.long, .row, body .cabinet #header, body .cabinet #profile, body .cabinet #experience, body .cabinet #abilities, body .cabinet #footer {
+.long, .row, body .cabinet #header, body .cabinet #mobileHeader, body .cabinet #profile, body .cabinet #experience, body .cabinet #abilities, body .cabinet #footer {
   width: 100% !important; }
 
 .moderate, body .cabinet #profile .content, body .cabinet #experience .content, body .cabinet #abilities .content, body .cabinet #footer .content {
@@ -14,16 +14,16 @@
   font-size: 36pt; }
 
 .medium {
-  font-size: 28pt; }
+  font-size: 30pt; }
 
 .small {
-  font-size: 22pt; }
+  font-size: 24pt; }
 
 .xsmall {
-  font-size: 16pt; }
+  font-size: 20pt; }
 
 .xxsmall {
-  font-size: 12pt; }
+  font-size: 16pt; }
 
 .align-left {
   text-align: left !important; }
@@ -42,6 +42,9 @@
 
 .mobileHidden {
   display: block !important; }
+
+.wideHidden {
+  display: none; }
 
 .bar-top {
   border-top: 1px solid #A0A0A0;
@@ -111,23 +114,26 @@ ul {
   .mobileHidden {
     display: none !important; }
 
+  .wideHidden {
+    display: block !important; }
+
   .xlarge {
-    font-size: 5.8vw !important; }
+    font-size: 6.0vw !important; }
 
   .large {
-    font-size: 5.2vw !important; }
+    font-size: 5.5vw !important; }
 
   .medium {
-    font-size: 4.8vw !important; }
+    font-size: 5.0vw !important; }
 
   .small {
-    font-size: 4.2vw !important; }
+    font-size: 4.5vw !important; }
 
   .xsmall {
-    font-size: 3.8vw !important; }
+    font-size: 4.0vw !important; }
 
   .xxsmall {
-    font-size: 3.2vw !important; }
+    font-size: 3.5vw !important; }
 
   .moderate, body .cabinet #profile .content, body .cabinet #experience .content, body .cabinet #abilities .content, body .cabinet #footer .content {
     width: 97% !important; }
@@ -139,7 +145,7 @@ ul {
     width: 100% !important; }
 
   ul {
-    margin: 0px;
+    margin: 10px 0px;
     padding: 0px; } }
 body {
   padding: 0px;
@@ -151,7 +157,7 @@ body {
     /* ===================== experience ========================= */
     /* ===================== footer ========================= */
     /* ===================== footer ========================= */ }
-    body .cabinet .row:not(#header), body .cabinet #header:not(#header), body .cabinet #profile:not(#header), body .cabinet #experience:not(#header), body .cabinet #abilities:not(#header), body .cabinet #footer:not(#header) {
+    body .cabinet .row:not(#header), body .cabinet #header:not(#header), body .cabinet #mobileHeader:not(#header), body .cabinet #profile:not(#header), body .cabinet #experience:not(#header), body .cabinet #abilities:not(#header), body .cabinet #footer:not(#header) {
       padding-top: 15px;
       padding-bottom: 15px; }
     body .cabinet #header {
@@ -184,6 +190,10 @@ body {
                 font-size: 42pt; }
               body .cabinet #header .content .wrap-subcontent .subcontent .title-wrap p {
                 font-size: 26pt; }
+    body .cabinet #mobileHeader {
+      position: relative;
+      height: 80px;
+      background-color: #222222; }
     body .cabinet #profile {
       background-color: #C0C0C0;
       padding: 10px 0px; }
@@ -216,6 +226,8 @@ body {
         body .cabinet #experience .content .wrap-subcontent {
           width: 80%;
           margin: auto; }
+          body .cabinet #experience .content .wrap-subcontent ul li {
+            margin: 30px 0px !important; }
     body .cabinet #abilities {
       background-color: #C0C0C0; }
       body .cabinet #abilities .content {
@@ -243,6 +255,10 @@ body {
             width: 80%;
             margin: auto;
             display: block; }
+            body .cabinet #footer .content .wrap-subcontent ul a {
+              color: #A0A0A0; }
+            body .cabinet #footer .content .wrap-subcontent ul:hover a {
+              color: #555555; }
             body .cabinet #footer .content .wrap-subcontent ul li {
               margin: auto;
               width: 49%;
@@ -258,7 +274,8 @@ body {
               	text-align:right !important;
               }*/ }
               body .cabinet #footer .content .wrap-subcontent ul li a {
-                color: #A0A0A0;
                 text-decoration: none; }
+                body .cabinet #footer .content .wrap-subcontent ul li a:hover {
+                  color: #F0F0F0; }
 
 /*# sourceMappingURL=style.css.map */
