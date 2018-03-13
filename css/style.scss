@@ -172,6 +172,13 @@ ul{
 		margin:10px 0px;
 		padding:0px;
 	}
+	#abilities{
+		ul{
+			li{
+				width:100% !important;
+			}
+		}
+	}
 }
 
 body{
@@ -333,6 +340,22 @@ body{
 				.wrap-subcontent{
 					width:80%;
 					margin:auto;
+
+					ul{
+
+						li{
+							display:inline-block;
+							margin:5px 0px;
+							width:49%;
+							&:odd{
+								float:left !important;
+							}
+							&:even{
+								float:right !important;
+							}	
+						}
+
+					}
 				}
 			}
 		}

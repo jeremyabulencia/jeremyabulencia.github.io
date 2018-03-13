@@ -146,7 +146,10 @@ ul {
 
   ul {
     margin: 10px 0px;
-    padding: 0px; } }
+    padding: 0px; }
+
+  #abilities ul li {
+    width: 100% !important; } }
 body {
   padding: 0px;
   margin: 0px; }
@@ -238,6 +241,14 @@ body {
         body .cabinet #abilities .content .wrap-subcontent {
           width: 80%;
           margin: auto; }
+          body .cabinet #abilities .content .wrap-subcontent ul li {
+            display: inline-block;
+            margin: 5px 0px;
+            width: 49%; }
+            body .cabinet #abilities .content .wrap-subcontent ul li:odd {
+              float: left !important; }
+            body .cabinet #abilities .content .wrap-subcontent ul li:even {
+              float: right !important; }
     body .cabinet #footer {
       background-color: #333333;
       color: #A0A0A0; }
