@@ -8,22 +8,22 @@
   width: 60%; }
 
 .xlarge {
-  font-size: 48pt; }
+  font-size: 42pt; }
 
 .large {
-  font-size: 36pt; }
+  font-size: 32pt; }
 
 .medium {
-  font-size: 30pt; }
+  font-size: 28pt; }
 
 .small {
-  font-size: 24pt; }
+  font-size: 22pt; }
 
 .xsmall {
-  font-size: 20pt; }
+  font-size: 18pt; }
 
 .xxsmall {
-  font-size: 16pt; }
+  font-size: 12pt; }
 
 .align-left {
   text-align: left !important; }
@@ -70,22 +70,22 @@ ul {
 
 @media screen and (max-width: 1137px) {
   .xlarge {
-    font-size: 4.3vw !important; }
+    font-size: 4.0vw !important; }
 
   .large {
-    font-size: 3.5vw !important; }
+    font-size: 4.0vw !important; }
 
   .medium {
-    font-size: 3.0vw !important; }
+    font-size: 3.5vw !important; }
 
   .small {
-    font-size: 2.5vw !important; }
+    font-size: 3.0vw !important; }
 
   .xsmall {
-    font-size: 2.0vw !important; }
+    font-size: 2.5vw !important; }
 
   .xxsmall {
-    font-size: 1.75vw !important; }
+    font-size: 2.0vw !important; }
 
   .moderate, body .cabinet #profile .content, body .cabinet #experience .content, body .cabinet #abilities .content, body .cabinet #footer .content {
     width: 90% !important; }
