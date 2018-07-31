@@ -67,7 +67,7 @@
   .resumeBtn_span {
     border: 2px solid #000080 !important;
     background-color: #000080;
-    padding: 0px 8px 5px 8px !important;
+    padding: 0px 8px 0px 8px !important;
     border-radius: 10%; }
   .resumeBtn:hover {
     color: #F3F3F3; }
