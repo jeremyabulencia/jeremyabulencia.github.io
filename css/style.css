@@ -59,6 +59,7 @@
   z-index: 0 !important; }
 
 .resumeBtn {
+  margin: 5px;
   text-decoration: none;
   color: #C0C0C0;
   font-size: 12pt !important;
@@ -67,8 +68,8 @@
   .resumeBtn_span {
     border: 2px solid #000080 !important;
     background-color: #000080;
-    padding: 0px 8px 0px 8px !important;
-    border-radius: 10%; }
+    border-radius: 10%;
+    width: 50% !important; }
   .resumeBtn:hover {
     color: #F3F3F3; }
 
