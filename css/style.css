@@ -58,6 +58,20 @@
   top: 0;
   z-index: 0 !important; }
 
+.resumeBtn {
+  text-decoration: none;
+  color: #C0C0C0;
+  font-size: 12pt !important;
+  letter-spacing: 2px;
+  font-weight: 500; }
+  .resumeBtn_span {
+    border: 2px solid #000080 !important;
+    background-color: #000080;
+    padding: 0px 8px 5px 8px !important;
+    border-radius: 10%; }
+  .resumeBtn:hover {
+    color: #F3F3F3; }
+
 .container {
   position: relative;
   height: 100% !important; }
@@ -217,7 +231,7 @@ body {
             float: right;
             width: 34%; }
             body .cabinet #profile .content .wrap-subcontent .right-subcontent .label {
-              color: #000099; }
+              color: #000080; }
     body .cabinet #experience {
       background-color: #F0F0F0;
       padding: 10px 0px; }

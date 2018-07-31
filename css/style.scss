@@ -72,6 +72,26 @@ $back_index : -1 !important;
 .row{
 	@extend .long;
 }
+
+.resumeBtn{
+	&_span{
+		border:2px solid #000080 !important;
+		background-color:#000080;
+		padding:0px 8px 5px 8px !important;
+		border-radius:10%;
+
+	}
+	text-decoration:none;
+	color:#C0C0C0;
+	font-size:12pt !important;
+	letter-spacing:2px;
+
+	font-weight:500;
+	&:hover{
+		color:#F3F3F3
+	}
+}
+
 .container{
 	position:relative;
 	height:100% !important;
@@ -280,7 +300,7 @@ body{
 						width:34%;
 
 						.label{
-							color:#000099;
+							color:#000080;
 						}
 					}
 				}
