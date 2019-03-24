@@ -1,0 +1,39 @@
+$accent1:#c0392b;
+$accent2:#2c3e50;
+$shade1:#c0c0c0;
+$shade2:#333333;
+$shade3:#ffffff;
+
+$imagePath: "../../images/";
+
+body{
+	padding:0px !important;
+	margin:0px !important;
+}
+
+@mixin backgroundImage($image){
+	background-image:url(#{$imagePath}/#{$image});
+	background-attachment:fixed;
+	background-position:center center;
+	background-size:cover;
+}
+
+body{
+	#head{
+		min-height:300px;
+
+		@include backgroundImage("");
+	}
+
+	#body{
+		min-height:500px;
+		background-color: $shade1;
+		border-top: 1px solid $shade1;
+		border-bottom: 1px solid $shade1;
+	}
+
+	#foot{
+		min-height:100px;
+		background-color: $shade2;
+	}
+}
