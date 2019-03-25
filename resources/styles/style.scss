@@ -1,6 +1,6 @@
 $accent1:#c0392b;
 $accent2:#2c3e50;
-$shade1:#c0c0c0;
+$shade1:#f0f0f0;
 $shade2:#333333;
 $shade3:#ffffff;
 
@@ -14,15 +14,15 @@ body{
 @mixin backgroundImage($image){
 	background-image:url(#{$imagePath}/#{$image});
 	background-attachment:fixed;
-	background-position:center center;
-	background-size:cover;
+	background-position:top center;
+	background-size:100%;
 }
 
 body{
 	#head{
 		min-height:300px;
 
-		@include backgroundImage("");
+		@include backgroundImage("sunrise.jpg");
 	}
 
 	#body{
