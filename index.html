@@ -187,5 +187,20 @@
         </section>
       </main>
     </div>
+
+    <script>
+      // Add print-friendly styles
+      const printStyle = document.createElement('style');
+      printStyle.textContent = `
+        @media print {
+          .page-bg { display: none; }
+          .resume-card { box-shadow: none; border: none; margin: 0; padding: 0; width: 100%; }
+          body { background: white; padding: 0; }
+          a { text-decoration: none; }
+          .socials span { display: none; }
+        }
+      `;
+      document.head.appendChild(printStyle);
+    </script>
   </body>
 </html>
