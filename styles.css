@@ -61,8 +61,8 @@ body {
 
 .nav-brand {
   flex-shrink: 0;
-  width: 80px;
-  height: 40px;
+  width: 180px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -993,8 +993,8 @@ body {
   }
 
   .nav-brand {
-    width: 60px;
-    height: 30px;
+    width: 140px;
+    height: 40px;
   }
 
   .hero-name {

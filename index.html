@@ -17,23 +17,28 @@
           <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200" width="100%" height="100%">
             <style>
               .bg { fill: #0B0F17; }
-              .gold-text { font-family: 'Playfair Display', serif; fill: #D4AF37; letter-spacing: 2px; }
-              .sub-text { font-family: 'Inter', sans-serif; fill: #94A3B8; font-size: 10px; letter-spacing: 4px; }
-              .monogram { font-family: 'Playfair Display', serif; fill: url(#goldGradient); font-size: 72px; font-weight: bold; }
+              .main-name { font-family: 'Playfair Display', serif; fill: #D4AF37; font-size: 32px; letter-spacing: 4px; font-weight: normal; }
+              .line { stroke: #D4AF37; stroke-width: 1.5; }
+              .badge-text { font-family: 'Inter', sans-serif; fill: #F3E5AB; font-size: 14px; font-weight: bold; }
             </style>
             <defs>
               <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                 <stop offset="0%" stop-color="#F3E5AB" />
-                <stop offset="50%" stop-color="#D4AF37" />
                 <stop offset="100%" stop-color="#AA7C11" />
               </linearGradient>
             </defs>
             <rect width="100%" height="100%" class="bg"/>
-            <!-- Monogram JA -->
-            <text x="250" y="75" text-anchor="middle" class="monogram">J A</text>
-            <!-- Name & Subtitle -->
-            <text x="250" y="125" text-anchor="middle" font-size="16" class="gold-text">JEREMY ABULENCIA</text>
-            <text x="250" y="145" text-anchor="middle" class="sub-text">SOFTWARE ENGINEER</text>
+            
+            <!-- Stacked Name -->
+            <text x="60" y="85" class="main-name">JEREMY</text>
+            <text x="60" y="125" class="main-name" fill="#FFFFFF">ABULENCIA</text>
+            
+            <!-- Underline Accent & Monogram -->
+            <line x1="60" y1="145" x2="380" y2="145" class="line"/>
+            
+            <!-- Right-aligned Monogram Badge -->
+            <polygon points="415,115 440,85 465,115" fill="none" stroke="url(#goldGradient)" stroke-width="2"/>
+            <text x="440" y="111" text-anchor="middle" class="badge-text">JA</text>
           </svg>
         </div>
         <ul class="nav-links">
