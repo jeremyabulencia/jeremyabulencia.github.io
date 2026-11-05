@@ -51,15 +51,16 @@ class Terminal {
     await this.delay(500);
     await this.typeCommand('relocation_status');
     await this.typeOutput('STATUS: Moving from Manila, PH to Dortmund, DE');
-    await this.typeOutput('READINESS: Ready for new challenges in Germany');
+    await this.typeOutput('READINESS: Ready for new opportunities in Germany');
     
     await this.delay(500);
     await this.typeCommand('cat bio.json');
     await this.typeOutput('{');
-    await this.typeOutput('  "name": "Jeremy Abulencia",');
-    await this.typeOutput('  "role": "Backend Engineer & Cloud Architect",');
-    await this.typeOutput('  "experience": "8+ years",');
-    await this.typeOutput('  "specialization": "Microservices & Scalable Systems"');
+    await this.typeOutput('  "name": "Jeremy Jordan J. Abulencia",');
+    await this.typeOutput('  "role": "Software Engineer",');
+    await this.typeOutput('  "experience": "14+ years since 2012",');
+    await this.typeOutput('  "specialization": "PHP Laravel, Microservices & Cloud",');
+    await this.typeOutput('  "expertise": ["Facial Recognition", "AWS Textract", "Payment Systems"]');
     await this.typeOutput('}');
     
     this.input.focus();
@@ -114,33 +115,39 @@ class Terminal {
   executeCommand(command) {
     switch (command) {
       case 'bio':
-        this.printLine('Jeremy Abulencia - Backend Engineer');
-        this.printLine('Location: Manila, PH (Moving to Dortmund, DE)');
-        this.printLine('Experience: 8+ years in full-stack backend development');
-        this.printLine('Specialization: Microservices, Cloud Architecture, Scalable Systems');
-        this.printLine('Expertise: PHP/Laravel, Node.js, Docker, Kubernetes, AWS');
+        this.printLine('Jeremy Jordan J. Abulencia - Software Engineer');
+        this.printLine('Location: Manila, PH (Relocating to Dortmund, DE)');
+        this.printLine('Experience: 14+ years in backend development since 2012');
+        this.printLine('');
+        this.printLine('Professional Background:');
+        this.printLine('  → Pioneer developer at Tagbond (2012-2016) - Built website from scratch');
+        this.printLine('  → Software Engineer at NCS Philippines/Yondu Inc (2016-Present)');
+        this.printLine('');
+        this.printLine('Specialization: PHP Laravel, MySQL, MongoDB, Microservices, APIs');
+        this.printLine('Notable Skills: Facial Recognition, AWS Textract, Docker, System Architecture');
         break;
       
       case 'stack':
-        this.printLine('Backend: PHP, Laravel, Node.js, Express.js, Python');
-        this.printLine('Databases: PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch');
-        this.printLine('Cloud & DevOps: AWS, Docker, Kubernetes, Jenkins, CI/CD');
-        this.printLine('Architecture: Microservices, REST APIs, GraphQL, Event-Driven');
-        this.printLine('Tools: Git, Linux, VS Code, Postman, Jira');
+        this.printLine('Backend Frameworks: PHP, Laravel, Yii');
+        this.printLine('Databases: MySQL, MongoDB');
+        this.printLine('DevOps & Cloud: Docker, Docker Compose, AWS');
+        this.printLine('Architecture: REST APIs, Microservices');
+        this.printLine('Specialized: Facial Recognition, AWS Textract, Payment Systems');
+        this.printLine('Frontend: HTML, CSS, JavaScript');
+        this.printLine('Version Control: Git');
         break;
       
       case 'experience':
-        this.printLine('2021-2024: Senior Backend Engineer @ Acme Solutions');
-        this.printLine('  → Architected microservices handling 2M+ daily transactions');
-        this.printLine('  → Led monolith to Kubernetes migration');
+        this.printLine('📌 NCS Philippines (Yondu Inc) | August 2016 - Present');
+        this.printLine('   Role: Software Engineer');
+        this.printLine('   Projects: WiFi, Remittance, Financing, CMS, Employee Management System');
+        this.printLine('   Highlights: Facial Recognition, AWS Textract Integration');
         this.printLine('');
-        this.printLine('2019-2021: Full Stack Developer @ TechStartup Inc');
-        this.printLine('  → Built REST APIs supporting 500K+ active users');
-        this.printLine('  → Implemented CI/CD pipelines');
+        this.printLine('📌 Tagbond | November 2012 - June 2016');
+        this.printLine('   Role: Pioneer Web Developer');
+        this.printLine('   Highlights: Built complete website from scratch using PHP Yii');
         this.printLine('');
-        this.printLine('2018-2019: Junior Developer @ Digital Agency XYZ');
-        this.printLine('  → Developed 15+ client websites and applications');
-        this.printLine('  → Set up automated testing framework');
+        this.printLine('Total: 14+ years of experience in backend software development');
         break;
       
       case 'clear':
