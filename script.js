@@ -205,32 +205,25 @@ function setupContactForm() {
   
   if (form) {
     form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      
       const name = document.getElementById('contact-name').value.trim();
       const email = document.getElementById('contact-email').value.trim();
       const message = document.getElementById('contact-message').value.trim();
       
       // Basic validation
       if (!name || !email || !message) {
+        e.preventDefault();
         showFeedback('Please fill in all fields', 'error', feedback);
         return;
       }
       
       if (!isValidEmail(email)) {
+        e.preventDefault();
         showFeedback('Please enter a valid email address', 'error', feedback);
         return;
       }
       
-      // Simulate form submission
-      showFeedback('Message sent successfully! I\'ll get back to you soon.', 'success', feedback);
-      form.reset();
-      
-      // Clear feedback after 4 seconds
-      setTimeout(() => {
-        feedback.classList.remove('success', 'error');
-        feedback.textContent = '';
-      }, 4000);
+      // Form will submit to FormSubmit.co
+      showFeedback('Sending your message...', 'success', feedback);
     });
   }
 }
